@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary py-8 sm:py-10 mt-8 sm:mt-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* CareMel Logo Section */}
           <div className="flex flex-col items-start">
             <div className="mb-4">
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           {/* Learn More and How we can help you Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
             {/* Learn More Section */}
             <div className="flex flex-col">
               <h4 className="text-xl sm:text-2xl font-semibold text-primary mb-4">
