@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: local("CHANGANUNITYPE-BOLD"),
+    url("./assets/fonts/SofiaPro") format("truetype");
+}
+
+body {
+  background-color: white;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+.header-text {
+  @apply text-header md:text-[24px] lg:text-[51px];
+}
+
+.body-text {
+  @apply text-body md:text-[18px] lg:text-[21px];
+}
+
+.card-header {
+  @apply text-cardheader md:text-[18px] lg:text-[24px];
+}
+
+.card-body {
+  @apply text-cardbody md:text-[14px] lg:text-[16px];
+}
