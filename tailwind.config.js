@@ -12,17 +12,18 @@ export default {
         cardheader: ["22px"],
         cardbody: ["14px"],
       },
+      colors: {
+        white: "#FFFFFF",
+        primary: "#388E3C", // Custom primary color
+        secondary: "#C8E6C9", // Custom secondary color
+        accent: "#FBBF24", // Custom accent color
+        active: "#00FF00",
+        expired: "#FF0000",
+        pending: "#FFFF00",
+        // Add more custom colors as needed
+      },
     },
-    colors: {
-      white: "#FFFFFF",
-      primary: "#388E3C", // Custom primary color
-      secondary: "#C8E6C9", // Custom secondary color
-      accent: "#FBBF24", // Custom accent color
-      active: "#00FF00",
-      expired: "#FF0000",
-      pending: "#FFFF00",
-      // Add more custom colors as needed
-    },
+
     // screens: {
     //   sm: "576px",
     //   // => @media (min-width: 576px) { ... }

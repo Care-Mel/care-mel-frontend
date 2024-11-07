@@ -16,15 +16,25 @@ const Collaborate = () => {
   ];
 
   return (
-    <div className="text-center p-4 sm:p-6 md:p-8 mt-4 sm:mt-6 md:mt-10">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 md:mb-4">
-        Collaborate for Better Care
+    <div className="container mx-auto px-10 py-4 sm:py-6 md:py-8 mt-1 sm:mt-2 md:mt-5">
+      <div className="mb-10 flex flex-col md:flex-row justify-around bg-green-600 text-white rounded-lg p-4 shadow-lg px-10 py-10">
+        <div className=" mb-4 md:mb-0 md:w-1/3">
+          <h3 className="text-xl font-bold">Active Caregivers</h3>
+          <p className="header-text mt-2 font-bold">56 Caregivers</p>
+        </div>
+        <div className="text-center mb-4 md:mb-0 md:w-1/3">
+          <h3 className="text-xl font-bold">Years of Service</h3>
+          <p className="header-text mt-2 font-bold">2 Years</p>
+        </div>
+        <div className="text-end mb-4 md:mb-0 md:w-1/3">
+          <h3 className="text-xl font-bold">Trusted by Families</h3>
+          <p className="header-text mt-2 font-bold">32 Families</p>
+        </div>
+      </div>
+      <h2 className="text-2xl sm:text-3xl md:text-2xl font-bold mb-2 sm:mb-3 md:mb-4">
+        Our Partnership Organizations
       </h2>
-      <p className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
-        Work with us to improve senior care. Partner with our startup and
-        contribute to making a real difference in people's lives.
-      </p>
-      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 sm:mt-6 md:mt-10">
+      <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 mt-4 sm:mt-6 md:mt-10">
         {partners.map((partner, index) => (
           <div key={index} className="flex flex-col items-center">
             <img

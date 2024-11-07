@@ -1,95 +1,72 @@
-import { MdOutlineEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import Animation from "./animation";
-import facebook from "./../assets/animation/facebook.json";
-import Linkin from "./../assets/animation/linkedin.json";
-import logo from "./../assets/image/home/Caremel.png";
+// import React from 'react';
+import logo from "./../assets/image/logo.png";
 
-const Footer = () => {
+const Footer = ({ classData }) => {
   return (
-    <footer className="bg-secondary py-8 sm:py-10 mt-8 sm:mt-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* CareMel Logo Section */}
-          <div className="flex flex-col items-start">
-            <div className="mb-4">
-              {/* Placeholder for CareMel Icon */}
-              <img src={logo} alt="CareMel Icon" className="h-50 w-auto" />
-            </div>
-            <p className="text-sm sm:text-base text-gray-600">
-              We make it easy to find kind and skilled caregivers. Our simple
-              process helps you get the right care for your loved ones fast.
-            </p>
+    <footer className={`${classData} text-white pt-20 pb-8 px-4`}>
+      <div className="container mx-auto flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col mb-4 md:mb-0">
+          <img src={logo} alt="Logo" className="w-28" />
+          <p className="mt-2 font-bold text-xl">
+            Look For Daycare Services? <br />
+            Call us straight away!
+          </p>
+          <div className="mt-4 flex space-x-4">
+            <a href="#" className="text-green-500 hover:text-green-300">
+              <i className="fab fa-facebook-f"></i>{" "}
+              {/* Make sure FontAwesome is included */}
+            </a>
+            <a href="#" className="text-green-500 hover:text-green-300">
+              <i className="fab fa-linkedin-in"></i>{" "}
+              {/* Make sure FontAwesome is included */}
+            </a>
           </div>
+        </div>
 
-          {/* Learn More and How we can help you Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
-            {/* Learn More Section */}
-            <div className="flex flex-col">
-              <h4 className="text-xl sm:text-2xl font-semibold text-primary mb-4">
-                Learn More
-              </h4>
-              <ul className="text-sm font-bold text-gray-600 space-y-2">
-                <li>About CAREMEL</li>
-                <li>CAREMEL Services</li>
-              </ul>
-            </div>
+        <div className="flex flex-col mb-4 md:mb-0">
+          <h2 className="text-xl font-semibold text-green-500">Services</h2>
+          <ul className="mt-2 space-y-5 mt-5">
+            <li className="">
+              <a href="#" className="hover:text-green-300">
+                Child Care Service
+              </a>
+            </li>
+            <li className="">
+              <a href="#" className="hover:text-green-300">
+                Newborn Care Service
+              </a>
+            </li>
+            <li className="">
+              <a href="#" className="hover:text-green-300">
+                Hospital Companion Care Service
+              </a>
+            </li>
+            <li className="">
+              <a href="#" className="hover:text-green-300">
+                Elder Care Service
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            {/* How we can help you Section */}
-            <div className="flex flex-col">
-              <h4 className="text-xl sm:text-2xl font-semibold text-primary mb-4">
-                How we can help you
-              </h4>
-              <ul className="text-sm font-bold text-gray-600 space-y-2">
-                <li>Hiring a caregiver</li>
-                <li>Apply for a caregiver job</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Contact and Social Section */}
-          <div className="flex flex-col">
-            <div className="mb-8">
-              <h4 className="text-xl sm:text-2xl font-semibold text-primary mb-4">
-                Contact Us
-              </h4>
-              <ul className="text-sm space-y-2">
-                <li className="flex items-center">
-                  <FaPhoneAlt className="mr-3 text-primary" />
-                  <span>09745212996 (During Office Hours)</span>
-                </li>
-                <li className="flex items-center">
-                  <MdOutlineEmail className="mr-3 text-primary" />
-                  <span>caremel@gmail.com</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xl sm:text-2xl text-primary font-semibold mb-4">
-                Follow us
-              </h4>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-blue-600 hover:text-blue-800 transition-colors"
-                >
-                  <Animation
-                    animationData={facebook}
-                    style={{ width: "24px", height: "24px" }}
-                  />
-                </a>
-                <a
-                  href="#"
-                  className="text-blue-700 hover:text-blue-900 transition-colors"
-                >
-                  <Animation
-                    animationData={Linkin}
-                    style={{ width: "24px", height: "24px" }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col mb-4 md:mb-0 lg:mr-40">
+          <h2 className="text-xl text-green-500 font-semibold">
+            Contact With Us
+          </h2>
+          <p className="mt-5 text-lg font-semibold">
+            091292312314 <br />
+            <span className="text-sm font-medium">
+              (During Office Hours 9 to 5)
+            </span>
+          </p>
+          <p className="mt-5 font-semibold">
+            <a
+              href="mailto:carenekontact@mail.com"
+              className="hover:text-green-300"
+            >
+              carenekontact@mail.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>

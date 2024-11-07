@@ -1,17 +1,25 @@
+import herobanner from "./../../assets/image/home/herobanner.jpg";
+
 const HeroBanner = () => {
   return (
-    <div className="h-[80vh] flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="font-bold header-text mb-4">
-          Compassionate hearts, <br /> dedicated hands.
-        </h1>
-        <p className="body-text mb-5 mx-auto max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
-        </p>
-        <button className="inline-block px-6 py-3 body-text bg-primary rounded-lg hover:bg-green-600 transition duration-200">
-          <p className="text-white">Hiring a Caregiver</p>
-        </button>
+    <div className="contaier px-10 mx-auto h-[80vh] mx-auto">
+      <div className="flex h-full items-center">
+        <div className="w-1/2">
+          <div className="">
+            <img src={herobanner} alt="Hero Banner" className="shadow-sm" />
+          </div>
+        </div>
+        <div className="w-1/2">
+          <div className="ml-5">
+            <h2 className="header-text font-bold">
+              Look For Daycare Services?
+            </h2>
+            <p className="header-text font-bold mt-2">Call us straight away!</p>
+            <button className="mt-4 bg-green-500 body-text font-semibold text-white py-2 px-4 rounded-xl hover:bg-green-500">
+              Find Your Caregiver
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
