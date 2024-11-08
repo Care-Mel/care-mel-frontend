@@ -1,5 +1,8 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { IoMenuSharp } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+import logo from "./../../assets/image/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +15,9 @@ const Navbar = () => {
     <nav className="bg-white">
       <div className="container mx-auto flex items-center justify-between p-5">
         {/* Logo */}
-        <div className="text-green-600 font-bold text-lg">C A R E M E L</div>
+        <Link to="/" className="">
+          <img src={logo} alt="Logo" className="w-24" />
+        </Link>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex space-x-4">
@@ -70,9 +75,14 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="text-gray-800 focus:outline-none"
+            className="text-green-900 focus:outline-none"
           >
-            {isOpen ? "✖" : "☰"} {/* Hamburger or Close icon */}
+            {isOpen ? (
+              <IoClose size={20} className="text-green-900" />
+            ) : (
+              <IoMenuSharp size={20} className="text-green-900" />
+            )}{" "}
+            {/* Hamburger or Close icon */}
           </button>
         </div>
       </div>
@@ -80,19 +90,51 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-blue-500">
-          <div className="flex flex-col p-4">
-            <a href="#" className="text-gray-800 hover:text-green-600 my-2">
+          <div className="flex flex-col space-y-4 px-4 py-10 absolute w-full z-10 bg-slate-200">
+            <NavLink
+              to="/"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary text-lg font-semibold text-gray-800 hover:text-green-600"
+                  : "text-black text-lg font-semibold text-gray-800 hover:text-green-600"
+              }
+            >
               Home
-            </a>
-            <a href="#" className="text-gray-800 hover:text-green-600 my-2">
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary text-lg font-semibold text-gray-800 hover:text-green-600"
+                  : "text-black text-lg font-semibold text-gray-800 hover:text-green-600"
+              }
+            >
               About Us
-            </a>
-            <a href="#" className="text-gray-800 hover:text-green-600 my-2">
+            </NavLink>
+            <NavLink
+              to="/service"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary text-lg font-semibold text-gray-800 hover:text-green-600"
+                  : "text-black text-lg font-semibold text-gray-800 hover:text-green-600"
+              }
+            >
               Services
-            </a>
-            <a href="#" className="text-gray-800 hover:text-green-600 my-2">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary text-lg font-semibold text-gray-800 hover:text-green-600"
+                  : "text-black text-lg font-semibold text-gray-800 hover:text-green-600"
+              }
+            >
               Contact Us
-            </a>
+            </NavLink>
           </div>
         </div>
       )}

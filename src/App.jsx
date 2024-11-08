@@ -5,6 +5,7 @@ import About from "./pages/About";
 // import Service from "./pages/Service";
 import ServicePage from "./pages/Service";
 import Contact from "./pages/Contact";
+import PageTransition from "./components/PageTransition";
 // import About from "./pages/About";
 // import Service from "./pages/Service";
 // import PageNotFound from "./pages/PageNotFound";
@@ -15,10 +16,38 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/"
+            element={
+              <PageTransition>
+                <Home />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <PageTransition>
+                <About />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/service"
+            element={
+              <PageTransition>
+                <ServicePage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PageTransition>
+                <Contact />
+              </PageTransition>
+            }
+          />
           {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </div>

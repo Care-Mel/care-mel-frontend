@@ -36,8 +36,8 @@ const Testmonial = () => {
   const { quote, description, name, service } = testimonials[currentIndex];
 
   return (
-    <div className="container mx-auto p-10">
-      <div className="flex flex-col md:flex-row justify-between items-center p-6 bg-white">
+    <div className="mx-auto p-5 md:p-10">
+      <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
           <h2 className="header-text font-bold mb-4">
             Hear From Our <br />
@@ -48,28 +48,33 @@ const Testmonial = () => {
             about their positive experiences.
           </p>
         </div>
-        <div className="md:w-2/3 px-5 flex justify-between items-center ">
+        <div className="md:w-2/3 md:px-5 md:flex justify-between items-center ">
           <button
             onClick={previousTestimonial}
-            className="mx-2 px-4 py-4 bg-green-900 text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
+            className="hidden md:block mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
           >
             <IoIosArrowBack size={20} />
           </button>
-          <div className="px-10">
+          <div className="mb-5 md:mb-0 p-5 lg:px-10 bg-gray-100 md:bg-white">
             <div className="text-2xl font-bold mb-4">
-              <p className="">“ {quote} ”</p>
+              <p className="">{quote}</p>
             </div>
             <p className="text-gray-700">{description}</p>
-            <div className="flex justify-between pt-5">
+            <div className="md:flex justify-between pt-5">
               <p className="font-bold">{name}</p>
-              <p className="text-green-500 fon-bold">{service}</p>
+              <p className="text-primary fon-bold">{service}</p>
             </div>
           </div>
           {/* <div className="flex mt-4"> */}
-
+          <button
+            onClick={previousTestimonial}
+            className="md:hidden mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
+          >
+            <IoIosArrowBack size={20} />
+          </button>
           <button
             onClick={nextTestimonial}
-            className="mx-2 px-4 py-4 bg-green-900 text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
+            className="md:block mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
           >
             <IoIosArrowForward size={20} />
           </button>

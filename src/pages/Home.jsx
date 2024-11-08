@@ -22,7 +22,7 @@ function Home() {
       <Accordion />
       {/* <SimpleCareSolutions /> */}
       {/* <Collaborate /> */}
-      <Footer classData="bg-black" />
+      <Footer classData="bg-footer" />
     </div>
   );
 }

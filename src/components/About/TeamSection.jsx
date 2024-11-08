@@ -3,7 +3,7 @@ import teamsection from "./../../assets/image/about/teamsection.png";
 
 const TeamSection = () => {
   return (
-    <div className="h-[80vh] container px-10  mx-auto flex flex-col md:flex-row items-center">
+    <div className="h-[90vh] px-5 md:px-10  mx-auto flex flex-col md:flex-row justify-center items-center">
       <div className="md:w-1/2 mb-4 md:mb-0">
         <h2 className="header-text font-bold">Meet Our Caring Team</h2>
         <p className="mt-2 body-text">

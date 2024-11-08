@@ -36,11 +36,11 @@ const Steps = () => {
         Don't stress over hiring a caregiver! <br />
         It’s easier than you think.
       </p>
-      <div className="flex flex-col md:flex-row justify-around">
+      <div className="flex w-full flex-wrap justify-center">
         {stepsData.map((step, index) => (
           <div
             key={index}
-            className="text-green-600 rounded-lg p-4 mb-4 md:mb-0 w-full md:w-1/4 text-center"
+            className="text-green-600 rounded-lg p-4 mb-4 md:mb-0 w-full sm:w-1/2 lg:w-1/4 text-center"
           >
             <h3 className="font-semibold text-white text-xl">
               Step {index + 1}

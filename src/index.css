@@ -16,10 +16,12 @@ body {
 
 .header-text {
   @apply text-header md:text-[24px] lg:text-[42px];
+  color: "#1C1C1C";
 }
 
 .body-text {
   @apply text-body md:text-[18px] lg:text-[21px];
+  color: "#565656";
 }
 
 .card-header {

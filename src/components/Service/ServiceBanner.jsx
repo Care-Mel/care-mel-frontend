@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 
 function ServiceBanner() {
   return (
-    <div className="h-[80vh] container px-10  mx-auto flex justify-center items-center">
+    <div className="h-[90vh] container px-10  mx-auto flex justify-center items-center">
       <div className="text-center">
         <p className="header-text font-bold">
           Compassionate Care for Every Family
