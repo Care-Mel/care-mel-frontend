@@ -1,49 +1,59 @@
 import { useState } from "react";
-import elder from "./../../assets/image/home/eldercare.png";
-import infant from "./../../assets/image/home/infantcare.png";
-import hospital from "./../../assets/image/home/hospital.png";
+import { motion } from "framer-motion";
+import Skeleton from "react-loading-skeleton"; // Import the skeleton loader
+import elder from "./../../assets/image/home/eld.jpg";
+import infant from "./../../assets/image/home/newborn.png";
+import hospital from "./../../assets/image/home/hospitalcare.png";
 import child from "./../../assets/image/home/childcare.png";
 import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
+
+export const services = {
+  InfantCare: {
+    icon: <FaBaby />,
+    image: infant,
+    title: "Newborn Care",
+    description:
+      "“Our caregivers provide gentle and nurturing care for infants, ensuring safety and well-being”",
+  },
+  childCare: {
+    icon: <FaChild />,
+    image: child,
+    title: "Child Care",
+    description:
+      "“Reliable and compassionate childcare services, providing parents peace of mind knowing their children are in safe hands.”",
+  },
+  hospitalCare: {
+    icon: <FaHospitalAlt />,
+    image: hospital,
+    title: "Hospital Companion Care",
+    description:
+      "“We offer companionship and support for those in hospital settings, making recovery less lonely and more comfortable”",
+  },
+  elderCare: {
+    icon: <FaUserFriends />,
+    image: elder,
+    title: "Elder Care",
+    description:
+      "“We offer warm, attentive support for seniors, assisting with daily tasks to maintain comfort and independence at home.”",
+  },
+};
+
 const AboutUs = ({ classData }) => {
   const [selectedService, setSelectedService] = useState("childCare");
-
-  const services = {
-    childCare: {
-      icon: <FaBaby />, // Icon for Child Care
-      image: child, // Replace with relevant image path
-      title: "Child Care",
-      description:
-        "“Our Child Care service provides safe, personalized support for your child's well-being and growth, delivered by compassionate caregivers you can trust.”",
-    },
-    newbornCare: {
-      icon: <FaChild />, // Icon for Newborn Care
-      image: infant, // Replace with relevant image path
-      title: "Newborn Care",
-      description:
-        "“Our Newborn Care service ensures that your baby receives the utmost care and support tailored to their unique needs.”",
-    },
-    hospitalCare: {
-      icon: <FaHospitalAlt />, // Icon for Hospital Companion Care
-      image: hospital, // Replace with relevant image path
-      title: "Hospital Companion Care",
-      description:
-        "“Our Hospital Companion Care service provides necessary support and companionship for your loved ones during their hospital stay.”",
-    },
-    elderCare: {
-      icon: <FaUserFriends />, // Icon for Elder Care
-      image: elder, // Replace with relevant image path
-      title: "Elder Care",
-      description:
-        "“Our Elder Care service focuses on ensuring the comfort and health of your elderly loved ones.”",
-    },
-  };
+  const [loading, setLoading] = useState(false);
 
   const handleServiceChange = (service) => {
+    setLoading(true); // Start loading
     setSelectedService(service);
+
+    // Simulating a delay for loading the image (you can replace this with actual image loading logic)
+    setTimeout(() => {
+      setLoading(false); // Stop loading after a delay
+    }, 300); // Adjust the timeout as necessary
   };
 
   return (
-    <div className="mx-auto p-5 md:p-10">
+    <div className="mx-auto px-5 py-10 lg:px-0 lg:py-[64px] lg:w-[1000px]">
       <div className={`${classData} mx-auto`}>
         <p className="header-text font-bold md:text-center">
           Compassionate Care for Every Family
@@ -55,19 +65,19 @@ const AboutUs = ({ classData }) => {
         </p>
       </div>
       <div className="w-[320px] sm:w-full mx-auto md:flex flex-col md:flex-row items-start mt-10 space-y-4 md:space-y-0 md:space-x-4">
-        <div className="bg-sub h-full md:h-[250px] lg:h-[300px] flex flex-col justify-center px-4 rounded-lg mb-4 md:mb-0 mx-auto w-full sm:w-[300px] md:w-1/3">
-          <ul className="flex md:flex-col h-full justify-between md:py-8 py-4">
+        <div className="shadow-2xl h-full md:h-[250px] lg:h-[300px] flex flex-col justify-center px-4 rounded-lg mb-4 md:mb-0 mx-auto w-full sm:w-[300px] md:w-1/3">
+          <ul className="flex md:flex-col h-full justify-between py-4 md:py-0 lg:py-5">
             {Object.keys(services).map((serviceKey) => (
               <li
                 key={serviceKey}
-                className={`flex items-center md:mb-2 cursor-pointer px-4 md:py-3 py-4 rounded-md text-lg font-medium ${
+                className={`flex items-center cursor-pointer px-4 md:py-3 py-4 rounded-md text-lg font-medium transition duration-300 ${
                   selectedService === serviceKey
                     ? "bg-primary text-white"
                     : "hover:bg-primary hover:text-white"
                 }`}
                 onClick={() => handleServiceChange(serviceKey)}
               >
-                <p className="flex text-xl  items-center ">
+                <p className="flex text-xl  items-center">
                   {services[serviceKey]?.icon}
                   <span className="ms-2 text-sm md:text-md lg:text-xl hidden md:block">
                     {services[serviceKey].title}
@@ -77,26 +87,35 @@ const AboutUs = ({ classData }) => {
             ))}
           </ul>
         </div>
-        <div className="bg-sub rounded-lg md:h-[250px] lg:h-[300px] lg p-6 sm:flex items-center md:w-2/3">
-          <div className="h-[200px] sm:w-[764px] md:h-[221px] lg:h-[250px] overflow:hodden sm:mr-4">
+        <div className="shadow-2xl rounded-lg md:h-[250px] lg:h-[300px] p-6 sm:flex items-center md:w-2/3 overflow-hidden">
+          <div className="overflow-hidden sm:mr-4 h-[300px] sm:h-full sm:w-[250px] md:w-[200px] lg:w-[300px]">
+            {/* Show skeleton if loading, else show the image */}
+
             <img
+              key={selectedService}
               src={services[selectedService].image}
               alt={services[selectedService].title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full"
             />
           </div>
 
-          <div className="flex-grow h-full flex flex-col justify-between mt-5 sm:mt-0">
-            <h3 className="font-bold sm:text-xl lg:text-3xl">
-              {services[selectedService].title}
-            </h3>
-            <p className="mb-4 text-sm lg:text-[22px] lg:leading-8 mt-3 md:mt-0">
-              {services[selectedService].description}
-            </p>
-            <button className=" lg:w-[300px] text-md text-green-500 bg-white font-bold border border-primary rounded-xl py-2 px-4 hover:bg-primary transition duration-300 hover:text-white">
-              Discover Our {services[selectedService].title}
+          <motion.div
+            key={selectedService}
+            className="flex sm:h-[300px] flex-col justify-between py-10 lg:py-5 w-1/2"
+          >
+            <div>
+              <h3 className="font-bold text-xl lg:text-3xl mb-3">
+                {services[selectedService].title}
+              </h3>
+              <p className="md:text-[15px] lg:text-[18px] lg:leading-8 mb-5 sm:mb-0">
+                {services[selectedService].description}
+              </p>
+            </div>
+
+            <button className="md:text-md lg:text-lg text-primary bg-white font-bold border border-primary rounded-xl py-5 sm:py-2 sm:px-2 md:px-1 md:py-2 lg:py-3 lg:px-5 hover:bg-primary transition duration-300 hover:text-white">
+              Explore Our {services[selectedService].title}
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -4,7 +4,11 @@ import caregiverImage from "../../assets/image/home/caregiversection.png";
 const CaregiverSection = () => {
   return (
     <div
-      className={`bg-gradient-to-b md:bg-gradient-to-r from-white to-green-500 py-6`}
+      className="py-6"
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(34,210,76,1) 25%, rgba(69,210,42,1) 100%)",
+      }}
     >
       <div className="lg:w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between p-6 text-white">
         <div className="md:w-1/2 mt-6 md:mt-0">

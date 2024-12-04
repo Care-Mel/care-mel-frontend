@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import herobanner from "./../../assets/image/home/caremelBanner.jpg";
+import herobanner from "./../../assets/image/home/banner.jpg";
+import { GradualSpacing } from "../animaition/GradualSpacing";
 
 const HeroBanner = () => {
   return (
-    <div className="px-5 md:px-10 mx-auto h-[90vh]">
+    <div className="py-[64px] px-5 md:py-10 md:py-10 mx-auto lg:h-[90vh]">
       <div className="flex h-full items-center">
         <motion.div
           className="w-1/2 hidden md:block"
@@ -20,12 +21,20 @@ const HeroBanner = () => {
           transition={{ duration: 1 }}
         >
           <div className="ml-0 md:ml-5">
-            <h2 className="header-text font-bold">
-              Look For Daycare Services?
+            <h2 className="text-[32px] lg:text-4xl font-bold">
+              Looking For Daycare Services
             </h2>
-            <p className="header-text font-bold mt-2">Call us straight away!</p>
-            <button className="mt-4 bg-primary body-text font-semibold text-white py-2 px-4 rounded-xl hover:bg-green-600 transition duration-200">
-              Find Your Caregiver
+            <motion.p
+              initial={{ opacity: 0, x: -200 }} // Image enters with a slight slide up
+              animate={{ opacity: 1, x: 0 }} // Final state
+              exit={{ opacity: 0, x: 200 }} // Exit animation
+              transition={{ duration: 1, delay: 0.5 }} // Transition duration
+              className="text-[32px] lg:text-4xl font-bold mt-2 md:mt-5"
+            >
+              Call us straight away!
+            </motion.p>
+            <button className="mt-10 bg-primary text-[20px] font-semibold text-white py-5 px-10 rounded-xl hover:bg-green-600 transition duration-200">
+              Book a caregiving service
             </button>
           </div>
         </motion.div>

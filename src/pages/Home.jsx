@@ -11,18 +11,17 @@ import Testmonial from "../components/Home/testmonial/Testmonial";
 
 function Home() {
   return (
-    <div className="">
+    <div className=" mx-auto">
       <HeroBanner />
       <AboutUs />
       <Mission />
       <Collaborate />
       <Steps />
       <Testmonial />
-      <CaregiverSection classData="bg-gradient-to-r from-white to-green-500" />
+      <CaregiverSection />
       <Accordion />
       {/* <SimpleCareSolutions /> */}
       {/* <Collaborate /> */}
-      <Footer classData="bg-footer" />
     </div>
   );
 }

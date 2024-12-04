@@ -15,7 +15,7 @@ function About() {
       <Testmonial />
       <CaregiverSection classData="bg-gradient-to-b from-white to-green-900" />
       <Accordion />
-      <Footer classData="bg-footer" />
+      {/* <Footer classData="bg-footer" /> */}
     </div>
   );
 }

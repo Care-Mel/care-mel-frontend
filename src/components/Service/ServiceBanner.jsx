@@ -5,13 +5,15 @@ function ServiceBanner() {
     <div className="h-[90vh] container px-10  mx-auto flex justify-center items-center">
       <div className="text-center">
         <p className="header-text font-bold">
-          Compassionate Care for Every Family
+          Find Skilled and Caring Professionals at Care Mel
         </p>
         <p className="body-text mt-5">
-          Whether you need daily support or occasional assistance,
-          <br /> our care services are designed to provide your family with
-          <br />
-          dependable, nurturing care.
+          At Care Mel, we make it simple to find kind and skilled caregivers for
+          your loved ones.
+          <br /> Our optimized process ensures you receive the right care
+          quickly,
+          <br /> providing you with reliable and compassionate support whenever
+          you need it
         </p>
       </div>
     </div>

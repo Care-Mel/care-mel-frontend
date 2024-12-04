@@ -6,52 +6,57 @@ import About from "./pages/About";
 import ServicePage from "./pages/Service";
 import Contact from "./pages/Contact";
 import PageTransition from "./components/PageTransition";
+import Footer from "./components/Footer";
+import { AnimatePresence } from "framer-motion";
 // import About from "./pages/About";
 // import Service from "./pages/Service";
 // import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <PageTransition>
-                <Home />
-              </PageTransition>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <PageTransition>
-                <About />
-              </PageTransition>
-            }
-          />
-          <Route
-            path="/service"
-            element={
-              <PageTransition>
-                <ServicePage />
-              </PageTransition>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <PageTransition>
-                <Contact />
-              </PageTransition>
-            }
-          />
-          {/* <Route path="*" element={<PageNotFound />} /> */}
-        </Routes>
-      </div>
-    </Router>
+    <AnimatePresence>
+      <Router>
+        <div>
+          <Navbar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <PageTransition>
+                  <Home />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <PageTransition>
+                  <About />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/service"
+              element={
+                <PageTransition>
+                  <ServicePage />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <PageTransition>
+                  <Contact />
+                </PageTransition>
+              }
+            />
+            {/* <Route path="*" element={<PageNotFound />} /> */}
+          </Routes>
+        </div>
+        <Footer classData="bg-footer" />
+      </Router>
+    </AnimatePresence>
   );
 }
 

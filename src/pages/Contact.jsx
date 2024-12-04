@@ -11,7 +11,7 @@ function Contact() {
       <ContactSection />
       <Accordion />
       <Steps />
-      <Footer classData={"bg-footer"} />
+      {/* <Footer classData={"bg-footer"} /> */}
     </div>
   );
 }

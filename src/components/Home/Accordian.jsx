@@ -33,24 +33,20 @@ const Accordion = () => {
   };
 
   return (
-    <div className="container p-5 md:py-10 mb-10 lg:w-[1000px] mx-auto">
+    <div className="container p-5 md:py-[64px] mb-20 lg:w-[1000px] mx-auto">
       <h2 className="header-text mt-10 font-bold mb-4 text-center">
         Your Questions Answered
       </h2>
-      <p className="body-text text-center mb-10">
-        Check out our Q & A section for quick answers to <br /> common questions
-        about our caregiver services and
-        <br /> how to get started.
-      </p>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div>
           <div
             className={`${
               openIndex === 0 ? "bg-gray-100" : ""
-            } shadow-md rounded-lg min-h-[100px] flex flex-col items-center justify-center`}
+            } shadow-md rounded-lg mb-10 min-h-[100px] flex flex-col items-center justify-center`}
           >
             <div
-              className="flex justify-between w-full items-center p-4 cursor-pointer"
+              className="flex justify-between w-full items-center py-4 px-10 cursor-pointer"
               onClick={() => handleToggle(0)}
             >
               <span className="text-lg font-semibold">{data[0].question}</span>
@@ -59,7 +55,7 @@ const Accordion = () => {
               </button>
             </div>
             <div
-              className={`overflow-hidden transition-all duration-300 ${
+              className={`overflow-hidden transition-all duration-300 mt-3 ${
                 openIndex === 0 ? "max-h-screen" : "max-h-0"
               }`}
               style={{
@@ -67,16 +63,18 @@ const Accordion = () => {
                 overflow: "hidden",
               }}
             >
-              <div className="p-4 text-gray-700">{data[0].answer}</div>
+              <div className="py-4 px-10 text-gray-700">{data[0].answer}</div>
             </div>
           </div>
+
+          {/* ____________________________________________ */}
           <div
             className={`${
               openIndex === 1 ? "bg-gray-100" : ""
-            } shadow-md rounded-lg min-h-[100px] flex flex-col items-center justify-center`}
+            } shadow-md rounded-lg mb-10 min-h-[100px] flex flex-col items-center justify-center`}
           >
             <div
-              className="flex w-full justify-between items-center p-4 cursor-pointer"
+              className="flex w-full justify-between items-center py-4 px-10 cursor-pointer"
               onClick={() => handleToggle(1)}
             >
               <span className="text-lg font-semibold">{data[1].question}</span>
@@ -85,7 +83,7 @@ const Accordion = () => {
               </button>
             </div>
             <div
-              className={`overflow-hidden transition-all duration-300 ${
+              className={`overflow-hidden transition-all duration-300 mt-3 ${
                 openIndex === 1 ? "max-h-screen" : "max-h-0"
               }`}
               style={{
@@ -93,18 +91,19 @@ const Accordion = () => {
                 overflow: "hidden",
               }}
             >
-              <div className="p-4 text-gray-700">{data[1].answer}</div>
+              <div className="py-4 px-10 text-gray-700">{data[1].answer}</div>
             </div>
           </div>
         </div>
+        {/* _____________________________________________________________________________________ */}
         <div>
           <div
             className={`${
               openIndex === 2 ? "bg-gray-100" : ""
-            } shadow-md rounded-lg min-h-[100px] flex flex-col items-center justify-center`}
+            } shadow-md rounded-lg mb-10 min-h-[100px] flex flex-col items-center justify-center`}
           >
             <div
-              className="flex w-full justify-between items-center p-4 cursor-pointer"
+              className="flex w-full justify-between items-center py-4 px-10 cursor-pointer"
               onClick={() => handleToggle(2)}
             >
               <span className="text-lg font-semibold">{data[2].question}</span>
@@ -113,7 +112,7 @@ const Accordion = () => {
               </button>
             </div>
             <div
-              className={`overflow-hidden transition-all duration-300 ${
+              className={`overflow-hidden transition-all duration-300 mt-3 ${
                 openIndex === 2 ? "max-h-screen" : "max-h-0"
               }`}
               style={{
@@ -121,16 +120,16 @@ const Accordion = () => {
                 overflow: "hidden",
               }}
             >
-              <div className="p-4 text-gray-700">{data[2].answer}</div>
+              <div className="py-4 px-10 text-gray-700">{data[2].answer}</div>
             </div>
           </div>
           <div
             className={`${
               openIndex === 3 ? "bg-gray-100" : ""
-            } shadow-md rounded-lg min-h-[100px] flex flex-col items-center justify-center`}
+            } shadow-md rounded-lg mb-10 min-h-[100px] flex flex-col items-center justify-center`}
           >
             <div
-              className="flex w-full justify-between items-center p-4 cursor-pointer"
+              className="flex w-full justify-between items-center py-4 px-10 cursor-pointer"
               onClick={() => handleToggle(3)}
             >
               <span className="text-lg font-semibold">{data[3].question}</span>
@@ -139,7 +138,7 @@ const Accordion = () => {
               </button>
             </div>
             <div
-              className={`overflow-hidden transition-all duration-300 ${
+              className={`overflow-hidden transition-all duration-300 mt-3 ${
                 openIndex === 3 ? "max-h-screen" : "max-h-0"
               }`}
               style={{
@@ -147,7 +146,7 @@ const Accordion = () => {
                 overflow: "hidden",
               }}
             >
-              <div className="p-4 text-gray-700">{data[3].answer}</div>
+              <div className="py-4 px-10 text-gray-700">{data[3].answer}</div>
             </div>
           </div>
         </div>

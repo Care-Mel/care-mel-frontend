@@ -65,10 +65,13 @@ const Navbar = () => {
 
         {/* Language Selector and Button */}
         <div className="hidden md:flex items-center space-x-2">
-          <span className="text-gray-800">MYA / EN</span>
-          <button className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-500">
+          {/* <span className="text-gray-800">MYA / EN</span> */}
+          <a
+            href="https://m.me/197568866770556?source=qr_link_share"
+            className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-500"
+          >
             Contact Us
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

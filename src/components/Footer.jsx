@@ -4,7 +4,7 @@ import logo from "./../assets/image/logo.png";
 const Footer = ({ classData }) => {
   return (
     <footer className={`${classData} text-white pt-20 pb-8 px-5`}>
-      <div className="mx-auto flex">
+      <div className="mx-auto flex flex-col lg:flex-row">
         <div className="flex flex-col w-full w-1/3">
           <img src={logo} alt="Logo" className="w-28" />
           <p className="mt-2 font-bold text-xl">
@@ -23,7 +23,7 @@ const Footer = ({ classData }) => {
           </div>
         </div>
 
-        <div className="flex w-full w-2/3 flex-col md:flex-row mt-10 sm:mt-0">
+        <div className="flex w-full w-2/3 flex-col md:flex-row mt-10 lg:mt-0">
           <div className="flex flex-col w-full md:w-1/2">
             <h2 className="text-xl font-semibold text-primary">Services</h2>
             <ul className="mt-2 space-y-5 mt-5">
@@ -50,22 +50,20 @@ const Footer = ({ classData }) => {
             </ul>
           </div>
 
-          <div className="flex flex-col w-full md:w-1/2">
+          <div className="flex flex-col w-full md:w-1/2 mt-10 md:mt-0">
             <h2 className="text-xl text-primary font-semibold">
               Contact With Us
             </h2>
             <p className="mt-5 text-lg font-semibold">
-              091292312314 <br />
-              <span className="text-sm font-medium">
-                (During Office Hours 9 to 5)
-              </span>
+              09 - 773 709 015 <br />
+              <span className="text-sm font-medium">(Office Hours 9 to 6)</span>
             </p>
             <p className="mt-5 font-semibold">
               <a
                 href="mailto:carenekontact@mail.com"
                 className="hover:text-green-300"
               >
-                carenekontact@mail.com
+                info@caremelmm.com
               </a>
             </p>
           </div>

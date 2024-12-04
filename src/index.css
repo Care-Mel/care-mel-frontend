@@ -8,6 +8,10 @@
     url("./assets/fonts/SofiaPro") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   scroll-behavior: smooth;

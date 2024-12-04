@@ -36,7 +36,7 @@ const Testmonial = () => {
   const { quote, description, name, service } = testimonials[currentIndex];
 
   return (
-    <div className="mx-auto p-5 md:p-10">
+    <div className="mx-auto p-5 md:py-[64px] lg:w-[1000px] ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
           <h2 className="header-text font-bold mb-4">

@@ -17,7 +17,7 @@ function ServicePage() {
         <AboutUs classData={"hidden"} />
       </div>
       <Testmonial />
-      <Footer classData={"bg-footer"} />
+      {/* <Footer classData={"bg-footer"} /> */}
     </div>
   );
 }

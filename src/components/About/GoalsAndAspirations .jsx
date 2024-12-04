@@ -19,7 +19,7 @@ const GoalsAndAspirations = () => {
                 className="rounded-lg object-cover shadow-lg mr-4"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-1/2">
               <p className="body-text mt-5 md:mt-0 md:ms-10">
                 Our mission is to provide compassionate, high-quality caregiver
                 services that empower families and enhance the well-being of

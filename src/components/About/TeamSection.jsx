@@ -3,13 +3,13 @@ import teamsection from "./../../assets/image/about/teamsection.png";
 
 const TeamSection = () => {
   return (
-    <div className="h-[90vh] px-5 md:px-10  mx-auto flex flex-col md:flex-row justify-center items-center">
+    <div className="h-[90vh] lg:w-[1200px] px-5 md:px-10  mx-auto flex flex-col md:flex-row justify-center items-center">
       <div className="md:w-1/2 mb-4 md:mb-0">
-        <h2 className="header-text font-bold">Meet Our Caring Team</h2>
-        <p className="mt-2 body-text">
-          Our dedicated caregivers provide personalized support tailored to your
-          family’s needs. With compassion and professionalism, we’re here to
-          ensure your loved ones receive the highest quality of care.
+        <h2 className="header-text font-bold">About Care Mel</h2>
+        <p className="mt-5 lg:mt-10 body-text">
+          Care Mel is a Caregiving Service Platform dedicated to providing
+          high-quality, personalized home care solutions to individuals and
+          families.
         </p>
       </div>
       <div className="md:w-1/2 flex justify-center">
