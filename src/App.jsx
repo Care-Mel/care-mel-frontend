@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import PageTransition from "./components/PageTransition";
 import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./ScrollToTop";
 // import About from "./pages/About";
 // import Service from "./pages/Service";
 // import PageNotFound from "./pages/PageNotFound";
@@ -17,6 +18,7 @@ function App() {
     <AnimatePresence>
       <Router>
         <div>
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route
