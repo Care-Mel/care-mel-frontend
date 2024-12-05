@@ -7,7 +7,7 @@ function ServiceBanner() {
         <p className="header-text font-bold">
           Find Skilled and Caring Professionals at Care Mel
         </p>
-        <p className="body-text mt-5">
+        <p className="body-text sm:mt-5 md:mt-10 lg:mt-20">
           At Care Mel, we make it simple to find kind and skilled caregivers for
           your loved ones.
           <br /> Our optimized process ensures you receive the right care

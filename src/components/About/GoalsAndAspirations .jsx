@@ -1,6 +1,6 @@
 // import React from "react";
 import goal from "./../../assets/image/about/goal.png";
-import vision from "./../../assets/image/about/Container.png";
+import vision from "./../../assets/image/about/assss.jpg";
 
 const GoalsAndAspirations = () => {
   return (
@@ -41,12 +41,8 @@ const GoalsAndAspirations = () => {
                 impact.
               </p>
             </div>
-            <div className="w-full md:w-1/3 ">
-              <img
-                src={vision}
-                alt="Vision"
-                className="rounded-lg object-cover shadow-lg mr-4"
-              />
+            <div className="w-full md:w-1/3 overflow-hidden">
+              <img src={vision} alt="Vision" className="object-cover w-full" />
             </div>
             <div className="w-full md:hidden">
               <p className="body-text mt-5 md:mt-0 md:me-10">

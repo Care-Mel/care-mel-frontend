@@ -1,5 +1,5 @@
 // import React from 'react';
-import teamsection from "./../../assets/image/about/teamsection.png";
+import teamsection from "./../../assets/image/about/about.png";
 
 const TeamSection = () => {
   return (
@@ -12,11 +12,11 @@ const TeamSection = () => {
           families.
         </p>
       </div>
-      <div className="md:w-1/2 flex justify-center">
+      <div className="md:w-1/2  flex justify-center">
         <img
           src={teamsection} // Replace with your image source
           alt="Caring Team"
-          className="rounded-md object-cover shadow-lg max-w-full h-auto"
+          className="rounded-md object-cover w-[400px]"
         />
       </div>
     </div>
