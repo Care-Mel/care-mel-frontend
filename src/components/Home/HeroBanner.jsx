@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import herobanner from "./../../assets/image/home/banner.jpg";
-import { GradualSpacing } from "../animaition/GradualSpacing";
+// import { GradualSpacing } from "../animaition/GradualSpacing";
 
 const HeroBanner = () => {
   return (
@@ -33,9 +33,13 @@ const HeroBanner = () => {
             >
               Call us straight away!
             </motion.p>
-            <button className="mt-10 bg-primary text-[20px] font-semibold text-white py-5 px-10 rounded-xl hover:bg-green-600 transition duration-200">
+            <a
+              href="https://m.me/197568866770556?source=qr_link_share"
+              target="_blank"
+              className="inline-block mt-10 bg-primary text-[20px] font-semibold text-white py-5 px-10 rounded-xl hover:bg-green-600 transition duration-200"
+            >
               Book a caregiving service
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

@@ -7,10 +7,10 @@ const CaregiverSection = () => {
       className="py-6"
       style={{
         background:
-          "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(34,210,76,1) 25%, rgba(69,210,42,1) 100%)",
+          "linear-gradient(90deg, rgba(255,255,255,1) 0%, #319639 25%, #1E5C23 100%)",
       }}
     >
-      <div className="lg:w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between p-6 text-white">
+      <div className="lg:w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between p-6 lg:p-0 text-white">
         <div className="md:w-1/2 mt-6 md:mt-0">
           <img
             src={caregiverImage} // Replace with your image URL
@@ -28,9 +28,12 @@ const CaregiverSection = () => {
               to your family's needs. We're here to help you every step of the
               way!
             </p>
-            <button className="mt-4 px-6 py-2 hover:bg-green-500 hover:text-white font-bold border border-white rounded-xl bg-white text-green-600 transition duration-300">
+            <a
+              href="https://m.me/197568866770556?source=qr_link_share"
+              className="mt-4 px-6 py-2 hover:bg-green-500 hover:text-white font-bold border border-white rounded-xl bg-white text-green-600 transition duration-300"
+            >
               Find Your Caregiver
-            </button>
+            </a>
           </div>
         </div>
       </div>

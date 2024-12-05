@@ -4,7 +4,7 @@ import vision from "./../../assets/image/about/assss.jpg";
 
 const GoalsAndAspirations = () => {
   return (
-    <div className="md:w-[800px] lg:w-[1100px] mx-auto p-5 md:p-10 mt-10">
+    <div className="md:w-[800px] lg:w-[1000px] mx-auto p-5 md:p-10 mt-10">
       <h2 className="header-text font-bold md:text-center mb-10 ">
         Our Goals and Aspirations
       </h2>
@@ -16,10 +16,10 @@ const GoalsAndAspirations = () => {
               <img
                 src={goal}
                 alt="Mission"
-                className="rounded-lg object-cover shadow-lg mr-4"
+                className="rounded-lg w-full h-[250px] object-cover shadow-lg mr-4"
               />
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-2/3">
               <p className="body-text mt-5 md:mt-0 md:ms-10">
                 Our mission is to provide compassionate, high-quality caregiver
                 services that empower families and enhance the well-being of
@@ -42,7 +42,11 @@ const GoalsAndAspirations = () => {
               </p>
             </div>
             <div className="w-full md:w-1/3 overflow-hidden">
-              <img src={vision} alt="Vision" className="object-cover w-full" />
+              <img
+                src={vision}
+                alt="Vision"
+                className="object-cover w-full h-[250px] rounded-lg shadow-lg"
+              />
             </div>
             <div className="w-full md:hidden">
               <p className="body-text mt-5 md:mt-0 md:me-10">

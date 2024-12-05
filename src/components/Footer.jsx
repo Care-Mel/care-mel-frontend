@@ -1,29 +1,30 @@
 // import React from 'react';
+import { SocialIcon } from "react-social-icons";
 import logo from "./../assets/image/logo.png";
+import viber from "./../assets/image/about/viber.png";
 
 const Footer = ({ classData }) => {
   return (
-    <footer className={`${classData} text-white pt-20 pb-8 px-5`}>
-      <div className="mx-auto flex flex-col lg:flex-row">
-        <div className="flex flex-col w-full w-1/3">
+    <footer
+      className={`${classData} text-white pt-20 pb-8 px-5 md:px-10 lg:px-0 `}
+    >
+      <div className="mx-auto flex flex-col lg:flex-row lg:w-[1000px]">
+        <div className="flex flex-col w-full lg:w-2/5">
           <img src={logo} alt="Logo" className="w-28" />
           <p className="mt-2 font-bold text-xl">
             Look For Daycare Services? <br />
             Call us straight away!
           </p>
-          <div className="mt-4 flex space-x-4">
-            <a href="#" className="text-primary hover:text-green-300">
-              <i className="fab fa-facebook-f"></i>{" "}
-              {/* Make sure FontAwesome is included */}
-            </a>
-            <a href="#" className="text-primary hover:text-green-300">
-              <i className="fab fa-linkedin-in"></i>{" "}
-              {/* Make sure FontAwesome is included */}
+          <div className="mt-4 flex space-x-6">
+            <SocialIcon network="facebook" />
+            <SocialIcon network="telegram" />
+            <a href="https://www.viber.com/en/" target="_blank">
+              <img src={viber} alt="Viber" className="w-[53px]" />
             </a>
           </div>
         </div>
 
-        <div className="flex w-full w-2/3 flex-col md:flex-row mt-10 lg:mt-0">
+        <div className="flex w-full lg:w-3/5  flex-col md:flex-row mt-10 lg:mt-0">
           <div className="flex flex-col w-full md:w-1/2">
             <h2 className="text-xl font-semibold text-primary">Services</h2>
             <ul className="mt-2 space-y-5 mt-5">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Skeleton from "react-loading-skeleton"; // Import the skeleton loader
+// import Skeleton from "react-loading-skeleton"; // Import the skeleton loader
 import elder from "./../../assets/image/home/eld.jpg";
 import infant from "./../../assets/image/home/newborn.png";
 import hospital from "./../../assets/image/home/hospitalcare.png";
@@ -101,7 +101,7 @@ const AboutUs = ({ classData }) => {
 
           <motion.div
             key={selectedService}
-            className="flex sm:h-[300px] flex-col justify-between py-10 lg:py-5 w-1/2"
+            className="flex sm:h-[300px] flex-col justify-between py-10 lg:py-5 w-full md:w-1/2"
           >
             <div>
               <h3 className="font-bold text-xl lg:text-3xl mb-3">

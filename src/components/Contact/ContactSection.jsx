@@ -2,7 +2,7 @@
 
 const ContactSection = () => {
   return (
-    <div className="pt-[64px] lg:w-[1100px] mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 px-5 sm:px-20 md:px-6">
+    <div className="pt-[64px] lg:w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 px-5 sm:px-20 md:px-6">
       {/* Hotline Contact Card */}
       <div className="bg-primary text-center px-6 text-white rounded-lg py-10 md:py-30 flex md:h-[350px] flex-col justify-between shadow-md w-full md:w-1/2">
         <div>

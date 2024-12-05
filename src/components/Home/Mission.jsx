@@ -1,4 +1,5 @@
 // import React from 'react';
+import { Link } from "react-router-dom";
 import missionImage from "./../../assets/image/home/mission.jpg"; // Update with the actual image path
 // import Collaborate from "./Collaborate";
 const Mission = () => {
@@ -30,9 +31,12 @@ const Mission = () => {
             each family’s unique needs, giving you peace of mind every step of
             the way.
           </p>
-          <button className="text-lg md:mt-0 mt-4 md:w-[300px] inline-block border border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-xl py-2 px-4 transition duration-300">
-            Meet Our Care Team
-          </button>
+          <Link
+            to="/about"
+            className="text-lg md:mt-0 mt-4 md:w-[300px] inline-block border border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-xl py-2 px-4 transition duration-300"
+          >
+            About Care Mel
+          </Link>
         </div>
       </div>
     </div>

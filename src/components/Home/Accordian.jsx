@@ -3,6 +3,7 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [show, setShow] = useState(false);
 
   const data = [
     {
@@ -44,7 +45,7 @@ const Accordion = () => {
 
   return (
     <div className="container p-5 md:py-[64px] mb-20 lg:w-[1000px] mx-auto">
-      <h2 className="header-text mt-10 font-bold mb-4 text-center">
+      <h2 className="header-text mt-10 font-bold mb-10 text-center">
         Your Questions Answered
       </h2>
 
