@@ -112,9 +112,13 @@ const AboutUs = ({ classData }) => {
               </p>
             </div>
 
-            <button className="md:text-md lg:text-lg text-primary bg-white font-bold border border-primary rounded-xl py-5 sm:py-2 sm:px-2 md:px-1 md:py-2 lg:py-3 lg:px-5 hover:bg-primary transition duration-300 hover:text-white">
+            <a
+              href="https://m.me/197568866770556?source=qr_link_share"
+              target="_blank"
+              className="md:text-md lg:text-lg text-primary bg-white font-bold border border-primary rounded-xl py-5 sm:py-2 sm:px-2 md:px-1 md:py-2 lg:py-3 lg:px-5 hover:bg-primary transition duration-300 hover:text-white"
+            >
               Explore Our {services[selectedService].title}
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

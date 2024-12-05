@@ -16,11 +16,21 @@ const Footer = ({ classData }) => {
             Call us straight away!
           </p>
           <div className="mt-4 flex space-x-6">
-            <SocialIcon network="facebook" />
-            <SocialIcon network="telegram" />
-            <a href="https://www.viber.com/en/" target="_blank">
-              <img src={viber} alt="Viber" className="w-[53px]" />
-            </a>
+            <SocialIcon
+              url="https://www.facebook.com/caremel122023"
+              target="_blank"
+              network="facebook"
+              style={{ height: 35, width: 35 }}
+            />
+            <SocialIcon
+              network="linkedin"
+              url="https://www.linkedin.com/company/care-mel-mm/"
+              target="_blank"
+              style={{ height: 35, width: 35 }}
+            />
+            {/* <a href="viber://add?number=959773703015" target="_blank">
+              <img src={viber} alt="Viber" style={{ height: 35, width: 35 }} />
+            </a> */}
           </div>
         </div>
 
