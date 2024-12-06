@@ -65,7 +65,7 @@ const AboutUs = ({ classData }) => {
         </p>
       </div>
       <div className="w-[320px] sm:w-full mx-auto md:flex flex-col md:flex-row items-start mt-10 space-y-4 md:space-y-0 md:space-x-4">
-        <div className="shadow-2xl h-full md:h-[250px] lg:h-[300px] flex flex-col justify-center px-4 rounded-lg mb-4 md:mb-0 mx-auto w-full sm:w-[300px] md:w-1/3">
+        <div className="shadow-2xl h-full md:h-[250px] lg:h-[350px] flex flex-col justify-center px-4 rounded-lg mb-4 md:mb-0 mx-auto w-full sm:w-[300px] md:w-1/3">
           <ul className="flex md:flex-col h-full justify-between py-4 md:py-0 lg:py-5">
             {Object.keys(services).map((serviceKey) => (
               <li
@@ -87,8 +87,8 @@ const AboutUs = ({ classData }) => {
             ))}
           </ul>
         </div>
-        <div className="shadow-2xl rounded-lg md:h-[250px] lg:h-[300px] p-6 sm:flex items-center md:w-2/3 overflow-hidden">
-          <div className="overflow-hidden sm:mr-4 h-[300px] sm:h-full sm:w-[250px] md:w-[200px] lg:w-[300px]">
+        <div className="shadow-2xl rounded-lg md:h-[250px] lg:h-[350px] p-6 sm:flex items-center md:w-2/3 overflow-hidden">
+          <div className="overflow-hidden sm:mr-4 h-[300px] sm:h-full sm:w-[250px] md:w-[200px] lg:w-[250px]">
             {/* Show skeleton if loading, else show the image */}
 
             <img
@@ -101,9 +101,9 @@ const AboutUs = ({ classData }) => {
 
           <motion.div
             key={selectedService}
-            className="flex sm:h-[300px] flex-col justify-between py-10 lg:py-5 w-full md:w-1/2"
+            className="flex flex-col justify-between py-10 lg:py-5 w-full md:w-1/2"
           >
-            <div>
+            <div className="mb-5">
               <h3 className="font-bold text-xl lg:text-3xl mb-3">
                 {services[selectedService].title}
               </h3>
@@ -115,9 +115,9 @@ const AboutUs = ({ classData }) => {
             <a
               href="https://m.me/197568866770556?source=qr_link_share"
               target="_blank"
-              className="md:text-md lg:text-lg text-primary bg-white font-bold border border-primary rounded-xl py-5 sm:py-2 sm:px-2 md:px-1 md:py-2 lg:py-3 lg:px-5 hover:bg-primary transition duration-300 hover:text-white"
+              className="xs:text-[12px] sm:text-[10px] md:text-[12px] lg:text-[15px] text-primary bg-white font-bold border border-primary rounded-xl py-3 text-center hover:bg-primary transition duration-300 hover:text-white"
             >
-              Explore Our {services[selectedService].title}
+              Explore {services[selectedService].title}
             </a>
           </motion.div>
         </div>

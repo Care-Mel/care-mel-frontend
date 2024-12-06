@@ -9,23 +9,22 @@ const Accordion = () => {
     {
       question: "What types of caregiver services do you offer?",
       answer:
-        "We offer a variety of services including personal care, companionship, and respite care.",
+        "Our services include Newborn Care, Child Care, Maternal Care, Elder Care, Hospital Companion Care and specialized care for conditions like dementia or post-surgical recovery.",
     },
     {
-      question: "How do I find and hire a caregiver through your platform?",
+      question: "Can I meet the caregiver before services begin",
       answer:
-        "You can browse caregivers by location and specialties, and reach out directly to those who suit your needs.",
+        "Yes, we arrange meet-and-greet sessions via zoom (or) in-person to ensure compatibility between the caregiver and the care recipient.",
     },
     {
-      question: "Are your caregivers trained and certified?",
+      question: "What information do I need to provide when booking?",
       answer:
-        "Yes, all our caregivers go through a rigorous training process and are certified.",
+        "You’ll need basic details about the care recipient (age, health condition, required services) and your preferred schedule.",
     },
     {
-      question:
-        "What should I expect during the initial consultation with a caregiver?",
+      question: "How long does it take to start services after booking",
       answer:
-        "During the consultation, you'll discuss your specific needs and preferences to match with the right caregiver.",
+        "In most cases, services can begin within 24-48 hours. For complex care needs, it may take a little longer to ensure we find the best match.(holidays and weekends may affect availability).",
     },
     {
       question: "What happens if the caregiver is unavailable?",

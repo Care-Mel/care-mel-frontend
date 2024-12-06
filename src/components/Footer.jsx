@@ -2,6 +2,7 @@
 import { SocialIcon } from "react-social-icons";
 import logo from "./../assets/image/logo.png";
 import viber from "./../assets/image/about/viber.png";
+import { Link } from "react-router-dom";
 
 const Footer = ({ classData }) => {
   return (
@@ -12,7 +13,7 @@ const Footer = ({ classData }) => {
         <div className="flex flex-col w-full lg:w-2/5">
           <img src={logo} alt="Logo" className="w-28" />
           <p className="mt-2 font-bold text-xl">
-            Look For Daycare Services? <br />
+            Looking For Daycare Services? <br />
             Call us straight away!
           </p>
           <div className="mt-4 flex space-x-6">
@@ -39,24 +40,48 @@ const Footer = ({ classData }) => {
             <h2 className="text-xl font-semibold text-primary">Services</h2>
             <ul className="mt-2 space-y-5 mt-5">
               <li className="">
-                <a href="#" className="hover:text-green-300">
+                <Link
+                  to="/service"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  className="hover:text-green-300"
+                >
                   Child Care Service
-                </a>
+                </Link>
               </li>
               <li className="">
-                <a href="#" className="hover:text-green-300">
+                <Link
+                  to="/service"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  className="hover:text-green-300"
+                >
                   Newborn Care Service
-                </a>
+                </Link>
               </li>
               <li className="">
-                <a href="#" className="hover:text-green-300">
+                <Link
+                  to="/service"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  className="hover:text-green-300"
+                >
                   Hospital Companion Care Service
-                </a>
+                </Link>
               </li>
               <li className="">
-                <a href="#" className="hover:text-green-300">
+                <Link
+                  to="/service"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  className="hover:text-green-300"
+                >
                   Elder Care Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
