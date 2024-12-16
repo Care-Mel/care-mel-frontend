@@ -1,6 +1,6 @@
 import GoalsAndAspirations from "../components/About/GoalsAndAspirations ";
 import TeamSection from "../components/About/TeamSection";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Accordion from "../components/Home/Accordian";
 import CaregiverSection from "../components/Home/CaregiverSection";
 import Collaborate from "../components/Home/Collaborate";

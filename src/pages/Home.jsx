@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import AboutUs from "../components/Home/AboutUs";
 import Accordion from "../components/Home/Accordian";
 import CaregiverSection from "../components/Home/CaregiverSection";
@@ -6,7 +6,7 @@ import CaregiverSection from "../components/Home/CaregiverSection";
 import Collaborate from "../components/Home/Collaborate";
 import HeroBanner from "../components/Home/HeroBanner";
 import Mission from "../components/Home/Mission";
-import Steps from "../components/Home/StepPage";
+// import Steps from "../components/Home/StepPage";
 import Testmonial from "../components/Home/testmonial/Testmonial";
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
       <AboutUs />
       <Mission />
       <Collaborate />
-      <Steps />
+      {/* <Steps /> */}
       <Testmonial />
       <CaregiverSection />
       <Accordion />

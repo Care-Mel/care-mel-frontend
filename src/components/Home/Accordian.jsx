@@ -3,7 +3,7 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
   const data = [
     {
