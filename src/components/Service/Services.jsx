@@ -1,12 +1,6 @@
-// import React from 'react'
-import elder from "./../../assets/image/home/eldercare.png";
-import infant from "./../../assets/image/home/infantcare.png";
-import hospital from "./../../assets/image/home/hospital.png";
-// import chronic from "./../../../assets/image/home/chronicare.png";
-import child from "./../../assets/image/home/childcare.png";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { services } from "../Home/AboutUs";
+import { useState } from "react";
 
 function Services() {
   const [selectedService, setSelectedService] = useState("childCare");
@@ -39,7 +33,7 @@ function Services() {
             src={services[selectedService].image}
             alt={services[selectedService].title}
             key={selectedService}
-            className="w-full h-full rounded-lg"
+            className="w-full h-full rounded-lg object-cover"
             initial={{ opacity: 0, y: 200 }} // Image enters with a slight slide up
             animate={{ opacity: 1, y: 0 }} // Final state
             exit={{ opacity: 0, y: -200 }} // Exit animation

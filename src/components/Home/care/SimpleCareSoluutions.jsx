@@ -1,6 +1,6 @@
 // SimpleCareSolutions.
 import Card from "./Card";
-import elder from "./../../../assets/image/home/eldercare.png";
+import elder from "./../../../assets/image/service/eldercare.jpg";
 import infant from "./../../../assets/image/home/infantcare.png";
 import hospital from "./../../../assets/image/home/hospital.png";
 import chronic from "./../../../assets/image/home/chronicare.png";

@@ -9,6 +9,7 @@ import PageTransition from "./components/PageTransition";
 import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./ScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
 // import About from "./pages/About";
 // import Service from "./pages/Service";
 // import PageNotFound from "./pages/PageNotFound";
@@ -16,6 +17,7 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <AnimatePresence>
+      <Analytics />
       <Router>
         <div>
           <ScrollToTop />

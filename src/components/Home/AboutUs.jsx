@@ -1,23 +1,23 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 // import Skeleton from "react-loading-skeleton"; // Import the skeleton loader
-import elder from "./../../assets/image/home/eld.jpg";
-import infant from "./../../assets/image/home/newborn.png";
-import hospital from "./../../assets/image/home/hospitalcare.png";
-import child from "./../../assets/image/home/childcare.png";
+import elder from "./../../assets/image/service/eldercare.jpg";
+import infant from "./../../assets/image/service/newborn.jpg";
+import hospital from "./../../assets/image/service/hospitalCare.jpg";
+import newborn from "./../../assets/image/service/childCare.jpg";
 import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
 
 export const services = {
   InfantCare: {
     icon: <FaBaby />,
-    image: infant,
+    image: newborn,
     title: "Newborn Care",
     description:
       "“Our caregivers provide gentle and nurturing care for infants, ensuring safety and well-being”",
   },
   childCare: {
     icon: <FaChild />,
-    image: child,
+    image: infant,
     title: "Child Care",
     description:
       "“Reliable and compassionate childcare services, providing parents peace of mind knowing their children are in safe hands.”",
@@ -88,14 +88,14 @@ const AboutUs = ({ classData }) => {
           </ul>
         </div>
         <div className="shadow-2xl rounded-lg md:h-[250px] lg:h-[350px] p-6 sm:flex items-center md:w-2/3 overflow-hidden">
-          <div className="overflow-hidden sm:mr-4 h-[300px] sm:h-full sm:w-[250px] md:w-[200px] lg:w-[250px]">
+          <div className="overflow-hidden sm:mr-4 h-[300px] sm:h-full sm:w-[250px] md:w-[200px] lg:w-[250px] shadow-2xl rounded-lg">
             {/* Show skeleton if loading, else show the image */}
 
             <img
               key={selectedService}
               src={services[selectedService].image}
               alt={services[selectedService].title}
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
 
