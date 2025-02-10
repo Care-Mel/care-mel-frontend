@@ -4,36 +4,41 @@ import vision from "./../../assets/image/about/assss.jpg";
 
 const GoalsAndAspirations = () => {
   return (
-    <div className="md:w-[800px] lg:w-[1000px] mx-auto p-5 md:p-10 mt-10">
-      <h2 className="header-text font-bold md:text-center mb-10 ">
-        Our Goals and Aspirations
-      </h2>
-
+    <div className="md:w-[800px] lg:w-[1000px] mx-auto p-5 md:p-10 mt-[80px] sm:mt-[100px] md:mt-[120px] lg:mt-[150px] min-h-[100vh] flex md:justify-center md:items-center">
       <div className="">
         <div className="mb-10">
           <div className="md:flex items-center w-full mb-2">
-            <div className="w-full md:w-1/3 ">
+            <div className="w-full md:w-1/2 ">
               <img
                 src={goal}
                 alt="Mission"
-                className="rounded-lg w-full h-[250px] object-cover shadow-lg mr-4"
+                className="rounded-lg w-full md:w-[380px] h-[280px] object-cover shadow-lg mr-4"
               />
             </div>
-            <div className="w-full md:w-2/3">
-              <p className="body-text mt-5 md:mt-0 md:ms-10">
-                Our mission is to provide compassionate, high-quality caregiver
-                services that empower families and enhance the well-being of
-                their loved ones. We are committed to fostering trust and
-                delivering personalized care that meets individual needs.
-              </p>
+            <div className="w-full md:w-1/2">
+              <div className="mt-5 md:mt-0 md:ms-10 ">
+                <p className="text-[28px] mb-5 font-bold text-pridark ">
+                  Your Family’s Trust, Our Guiding Promise
+                </p>
+                <p className="text-[16px] sourcesans">
+                  Our mission is to provide compassionate, high-quality
+                  caregiver services that empower families and enhance the
+                  well-being of their loved ones. We are committed to fostering
+                  trust and delivering personalized care that meets individual
+                  needs.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="">
-          <div className="md:flex items-center mb-2">
-            <div className="w-full md:w-2/3 hidden md:block">
-              <p className="body-text me-10">
+        <div className="mt-10 md:mt-20">
+          <div className="md:flex justiy-end items-center mb-2">
+            <div className="w-full md:w-1/2 hidden md:block">
+              <p className="text-[28px] mb-5 font-bold text-pridark ">
+                Collaborate for Meaningful Change
+              </p>
+              <p className="text-[16px] sourcesans me-10">
                 Our vision is to be a leader in the caregiving industry,
                 recognized for our dedication to excellence and innovation. We
                 aim to create a supportive community where every family feels
@@ -41,11 +46,11 @@ const GoalsAndAspirations = () => {
                 impact.
               </p>
             </div>
-            <div className="w-full md:w-1/3 overflow-hidden">
+            <div className="w-full md:w-1/2 overflow-hidden flex justify-end">
               <img
                 src={vision}
                 alt="Vision"
-                className="object-cover w-full h-[250px] rounded-lg shadow-lg"
+                className="object-cover w-full md:w-[380px] h-[280px] rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:hidden">

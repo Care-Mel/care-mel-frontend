@@ -1,41 +1,38 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
-import missionImage from "./../../assets/image/home/mission.jpg"; // Update with the actual image path
+import missionImage from "./../../assets/image/home/mission.svg"; // Update with the actual image path
 // import Collaborate from "./Collaborate";
 const Mission = () => {
   return (
-    <div className="mt-20 p-5 lg:w-[1000px] mx-auto md:text-center">
+    <div className="mt-20 p-5 lg:px-0 lg:w-[1000px] mx-auto md:text-center">
       <h2 className="header-text font-bold">
         Our Mission: Caring for Every Family
       </h2>
-      {/* <p className="body-text font-medium mt-2">
-        We’re here to make caregiving a positive, reassuring <br /> experience
-        for every family.
-      </p> */}
-      <div className="flex flex-col md:flex-row items-center md:mt-6 bg-white rounded-lg py-4">
-        <div className="md:w-1/2 rounded-lg overflow-hidden mt-5">
+
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:mt-6 rounded-lg py-4">
+        <div className="rounded-lg overflow-hidden mt-5 w-full md:w-1/2">
           <img
             src={missionImage}
             alt="Caring Family"
-            className="w-full object-cover"
+            className="w-full h-[300px] md:h-auto  object-cover"
           />
         </div>
-        <div className="mt-10 md:mt-0 md:w-1/2 md:px-5 flex flex-col">
-          <p className="body-text font-medium mb-4 text-start">
+        <div className=" md:w-1/2 md:mt-0 flex flex-col md:text-[14px] lg:text-[20px]  md:leading-6 lg:leading-8">
+          <p className=" font-medium  mb-4 text-start">
             We’re dedicated to making caregiving a positive experience for every
             family. Our team provides compassionate, personalized support,
             ensuring your loved ones feel respected and cared for.
           </p>
-          <p className="body-text font-medium mb-4 text-start">
+          <p className="font-medium mb-2 text-start">
             With a focus on quality and trust, we create care plans that fit
             each family’s unique needs, giving you peace of mind every step of
             the way.
           </p>
           <Link
             to="/about"
-            className="text-lg md:mt-0 mt-4 md:w-[300px] inline-block border border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-xl py-2 px-4 transition duration-300"
+            className="text-[20px] md:text-[15px] text-center lg:text-[20px] open-sans mt-5 border border-primary bg-primary text-white hover:bg-white hover:text-primary font-bold rounded-full py-4 md:py-2 px-4 transition duration-300"
           >
-            About Care Mel
+            Learn About Us
           </Link>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import testing from "./../../../assets/image/home/testing.svg";
 
 const testimonials = [
   {
@@ -39,46 +40,52 @@ const Testmonial = () => {
     <div className="mx-auto px-5 md:px-10 lg:px-0 py-[64px] lg:w-[1000px] ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
-          <h2 className="header-text font-bold mb-4">
-            Hear From Our <br />
-            Clients
-          </h2>
-          <p className="body-text mb-6">
-            Families love our caregivers! Check out their testimonials to learn
-            about their positive experiences.
+          <img src={testing} alt="Testing" className="w-full" />
+          <p className="text-pridark font-bold text-[28px]">
+            Stories from Families Like Yours
           </p>
         </div>
-        <div className="md:w-2/3 md:px-5 md:flex justify-between items-center ">
-          <button
-            onClick={previousTestimonial}
-            className="hidden md:block mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
-          >
-            <IoIosArrowBack size={20} />
-          </button>
-          <div className="mb-5 md:mb-0 p-5 lg:px-10 bg-gray-100 md:bg-white">
-            <div className="text-2xl font-bold mb-4">
-              <p className="">{quote}</p>
+        <div className="bg-white md:w-2/3 md:px-5 py-5 mt-5 md:mt-0 rounded-3xl">
+          <div className="md:flex justify-between items-center">
+            <button
+              onClick={previousTestimonial}
+              className="hidden rounded-full md:block mx-2 px-4 py-4 bg-sub text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
+            >
+              <IoIosArrowBack size={20} />
+            </button>
+            <div className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white">
+              <div className="text-[20px] text-pridark font-bold mb-4">
+                <p className="">{quote}</p>
+              </div>
+              <p className="text-[16px]">{description}</p>
+              <div className="md:flex justify-between pt-5">
+                <p className="font-bold text-primary">{name}</p>
+                <p className="text-primary fon-bold">{service}</p>
+              </div>
             </div>
-            <p className="text-gray-700">{description}</p>
-            <div className="md:flex justify-between pt-5">
-              <p className="font-bold">{name}</p>
-              <p className="text-primary fon-bold">{service}</p>
-            </div>
+            <button
+              onClick={previousTestimonial}
+              className="md:hidden mx-2 px-4 py-4 bg-sub text-white rounded-full hover:bg-green-700 hover:text-white active:scale-90"
+            >
+              <IoIosArrowBack size={20} />
+            </button>
+            <button
+              onClick={nextTestimonial}
+              className="md:block mx-2 px-4 py-4 bg-sub text-white rounded-full hover:bg-green-700 hover:text-white active:scale-90"
+            >
+              <IoIosArrowForward size={20} />
+            </button>
           </div>
-          {/* <div className="flex mt-4"> */}
-          <button
-            onClick={previousTestimonial}
-            className="md:hidden mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
-          >
-            <IoIosArrowBack size={20} />
-          </button>
-          <button
-            onClick={nextTestimonial}
-            className="md:block mx-2 px-4 py-4 bg-primary text-white rounded hover:bg-green-700 hover:text-white active:scale-90"
-          >
-            <IoIosArrowForward size={20} />
-          </button>
-          {/* </div> */}
+          <div className="flex justify-center mt-4">
+            {testimonials.map((_, index) => (
+              <div
+                key={index}
+                className={`w-8 h-2 mx-1 ${
+                  index === currentIndex ? "bg-pridark" : "bg-gray-300"
+                }`}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

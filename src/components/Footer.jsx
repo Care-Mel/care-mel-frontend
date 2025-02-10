@@ -1,18 +1,15 @@
 // import React from 'react';
 import { SocialIcon } from "react-social-icons";
-import logo from "./../assets/image/logo.png";
-import viber from "./../assets/image/about/viber.png";
+import logo from "./../assets/image/logo.svg";
 import { Link } from "react-router-dom";
 
 const Footer = ({ classData }) => {
   return (
-    <footer
-      className={`${classData} text-white pt-20 pb-8 px-5 md:px-10 lg:px-0 `}
-    >
+    <footer className={`bg-white text-dark pt-20 pb-8 px-5 md:px-10 lg:px-0 `}>
       <div className="mx-auto flex flex-col lg:flex-row lg:w-[1000px]">
         <div className="flex flex-col w-full lg:w-2/5">
           <img src={logo} alt="Logo" className="w-28" />
-          <p className="mt-2 font-bold text-xl">
+          <p className="mt-2 open-sans text-gray-600 font-bold text-xl">
             Looking For Daycare Services? <br />
             Call us straight away!
           </p>

@@ -3,13 +3,7 @@ import caregiverImage from "../../assets/image/home/caregiversection.png";
 
 const CaregiverSection = () => {
   return (
-    <div
-      className="py-6"
-      style={{
-        background:
-          "linear-gradient(90deg, rgba(255,255,255,1) 0%, #319639 25%, #1E5C23 100%)",
-      }}
-    >
+    <div className="py-6 custom-gradient">
       <div className="lg:w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between p-6 lg:p-0 text-white">
         <div className="md:w-1/2 mt-6 md:mt-0">
           <img

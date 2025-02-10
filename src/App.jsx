@@ -21,7 +21,9 @@ function App() {
       <Router>
         <div>
           <ScrollToTop />
-          <Navbar />
+          <div className="absolute top-0 md:top-5 z-50 w-full">
+            <Navbar />
+          </div>
           <Routes>
             <Route
               path="/"

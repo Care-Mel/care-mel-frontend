@@ -1,18 +1,20 @@
 import { motion } from "framer-motion";
-import herobanner from "./../../assets/image/home/banner.jpg";
+import herobanner from "./../../assets/image/home/caremle.svg";
+import { MdSupportAgent } from "react-icons/md";
+
 // import { GradualSpacing } from "../animaition/GradualSpacing";
 
 const HeroBanner = () => {
   return (
-    <div className="py-[64px] px-5 md:py-10 md:py-10 mx-auto lg:h-[90vh]">
-      <div className="flex h-full items-center">
+    <div className="bg-background pt-10 px-5 mx-auto h-[100vh] flex justify-center items-center">
+      <div className="flex justify-center items-center container mx-auto">
         <motion.div
           className="w-1/2 hidden md:block"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <img src={herobanner} alt="Hero Banner" className="shadow-sm" />
+          <img src={herobanner} alt="Hero Banner" className="" />
         </motion.div>
         <motion.div
           className="w-full md:w-1/2"
@@ -20,25 +22,26 @@ const HeroBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="ml-0 md:ml-5">
-            <h2 className="text-[32px] lg:text-4xl font-bold">
-              Looking For Daycare Services
+          <div className="ml-0 md:ml-5 lg:mb-5">
+            <h2 className="text-[24px] lg:text-[38px] text-pridark font-bold">
+              Need Daycare Support? <br /> Let’s Find the Perfect Fit!
             </h2>
             <motion.p
               initial={{ opacity: 0, x: -200 }} // Image enters with a slight slide up
               animate={{ opacity: 1, x: 0 }} // Final state
               exit={{ opacity: 0, x: 200 }} // Exit animation
               transition={{ duration: 1, delay: 0.5 }} // Transition duration
-              className="text-[32px] lg:text-4xl font-bold mt-2 md:mt-5"
+              className="text-[20px] sourcesans lg:text-[28px] font-bold mt-2 md:mt-5"
             >
-              Call us straight away!
+              Free consultation with a care expert—no pressure, just guidance.
             </motion.p>
             <a
               href="https://m.me/197568866770556?source=qr_link_share"
               target="_blank"
-              className="inline-block mt-10 bg-primary text-[20px] font-semibold text-white py-5 px-10 rounded-xl hover:bg-green-600 transition duration-200"
+              className="inline-flex items-center mt-10 bg-primary md:text-[14px] text-[16px] font-semibold text-white py-5 px-10 rounded-full hover:bg-green-600 transition duration-200"
             >
-              Book a caregiving service
+              <span className="open-sans"> Get Your Personalized Plan</span>
+              <MdSupportAgent className="inline-block ml-2" />
             </a>
           </div>
         </motion.div>
