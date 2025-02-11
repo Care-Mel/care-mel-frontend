@@ -27,7 +27,7 @@ const ContactSection = () => {
               Our office hours are Monday to Friday, 9 AM to 5 PM. We're here to
               assist you with any questions or support you need.
             </p>
-            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+            <button className="w-full md:w-auto bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
               <span className="me-5">Call a Care Advisor</span>
               <img src={icon1} />
             </button>
@@ -59,7 +59,7 @@ const ContactSection = () => {
               listen closely, and craft a plan with ongoing adjustments to
               ensure it always works for you.
             </p>
-            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+            <button className="w-full md:w-auto bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
               <span className="me-5">Leave a Message</span>
               <img src={icon2} />
             </button>
@@ -82,7 +82,7 @@ const ContactSection = () => {
             <p className="sourcesans lg:text-[20px] mb-4">
               Your partnership helps us empower caregivers and transform lives
             </p>
-            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+            <button className="w-full md:w-auto bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
               <span className="me-5">Send a email</span>
               <img src={icon3} />
             </button>

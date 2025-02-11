@@ -25,7 +25,7 @@ const CaregiverSection = () => {
             </p>
             <a
               href="https://m.me/197568866770556?source=qr_link_share"
-              className="flex gap-4 mt-4 px-6 py-2 hover:scale-95 font-bold border border-white rounded-xl bg-white text-primary transition duration-300"
+              className="flex sm:inline-flex gap-4 mt-4 px-6 py-4 hover:scale-95 font-bold border border-white rounded-full bg-white text-primary transition duration-300"
             >
               <p>Get Personalized Care Plans</p>
               <img src={icon} />

@@ -59,7 +59,7 @@ const AboutUs = ({ classData }) => {
         {Object.entries(services).map(([service, data]) => (
           <div
             key={service}
-            className="flex flex-col justify-between items-center bg-gray-200 rounded-lg shadow-lg px-4 py-6 hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col justify-between items-center bg-sub rounded-lg shadow-lg px-4 py-10 hover:shadow-xl transition-shadow duration-300"
           >
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-pridark text-white">

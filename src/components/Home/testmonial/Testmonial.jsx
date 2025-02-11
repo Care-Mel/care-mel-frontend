@@ -53,13 +53,13 @@ const Testmonial = () => {
             >
               <IoIosArrowBack className="" size={20} />
             </button>
-            <div className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white h-[300px] md:h-auto">
+            <div className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white h-[300px] md:h-auto ">
               <div className="text-[20px] text-pridark font-bold mb-4">
                 <p className="">{quote}</p>
               </div>
               <p className="text-[16px]">{description}</p>
               <div className="md:flex justify-between pt-5">
-                <p className="font-bold text-primary">{name}</p>
+                {/* <p className="font-bold text-primary">{name}</p> */}
                 <p className="text-primary fon-bold">{service}</p>
               </div>
             </div>

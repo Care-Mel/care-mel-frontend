@@ -48,15 +48,17 @@ function Services() {
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-[300px] rounded-xl"
+              className="w-full h-[250px] rounded-xl object-cover"
             />
-            <div className="py-6 flex flex-col justify-between h-[250px]">
-              <h3 className="md:text-[22px] lg:text-[28px] font-semibold text-green-800">
-                {card.title}
-              </h3>
-              <p className="sourcesans text-[16px] lg:text-[20px]">
-                {card.description}
-              </p>
+            <div className="py-6 flex flex-col justify-between h-[250px] lg:h-[350px]">
+              <div>
+                <h3 className="md:text-[22px] lg:text-[28px] mb-5 font-semibold text-green-800">
+                  {card.title}
+                </h3>
+                <p className="sourcesans text-[16px] lg:text-[20px]">
+                  {card.description}
+                </p>
+              </div>
               <button className="bg-white text-primary font-bold py-4 px-4 rounded-full inline-flex items-center">
                 <span>Get Personalized Care Plans</span>
               </button>
