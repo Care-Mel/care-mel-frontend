@@ -5,32 +5,36 @@ import elder from "./../../assets/image/service/eldercare.jpg";
 import infant from "./../../assets/image/service/newborn.jpg";
 import hospital from "./../../assets/image/service/hospitalCare.jpg";
 import newborn from "./../../assets/image/service/childCare.jpg";
-import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
+import icon1 from "./../../assets/image/service/newborn_care_icon.svg";
+import icon2 from "./../../assets/image/service/child_care_icon.svg";
+import icon3 from "./../../assets/image/service/hospital_care_icon.svg";
+import icon4 from "./../../assets/image/service/elder_care_icon.svg";
+// import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
 
 export const services = {
   InfantCare: {
-    icon: <FaBaby />,
+    icon: icon1,
     image: newborn,
     title: "Newborn Care",
     description:
       "“Our caregivers provide gentle and nurturing care for infants, ensuring safety and well-being”",
   },
   childCare: {
-    icon: <FaChild />,
+    icon: icon2,
     image: infant,
     title: "Child Care",
     description:
       "“Reliable and compassionate childcare services, providing parents peace of mind knowing their children are in safe hands.”",
   },
   hospitalCare: {
-    icon: <FaHospitalAlt />,
+    icon: icon3,
     image: hospital,
     title: "Hospital Companion Care",
     description:
       "“We offer companionship and support for those in hospital settings, making recovery less lonely and more comfortable”",
   },
   elderCare: {
-    icon: <FaUserFriends />,
+    icon: icon4,
     image: elder,
     title: "Elder Care",
     description:
@@ -59,7 +63,7 @@ const AboutUs = ({ classData }) => {
           >
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-pridark text-white">
-                {data.icon}
+                <img src={data.icon} />
               </div>
             </div>
             <div className="mt-4">

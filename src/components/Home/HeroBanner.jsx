@@ -6,8 +6,8 @@ import { MdSupportAgent } from "react-icons/md";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-background pt-10 px-5 mx-auto h-[100vh] flex justify-center items-center">
-      <div className="flex justify-center items-center container mx-auto">
+    <div className="bg-background pt-10 px-5 mx-auto min-h-[100vh] flex justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center container mt-20 md:mt-10 mx-auto">
         <motion.div
           className="w-1/2 hidden md:block"
           initial={{ opacity: 0, y: 20 }}
@@ -44,6 +44,14 @@ const HeroBanner = () => {
               <MdSupportAgent className="inline-block ml-2" />
             </a>
           </div>
+        </motion.div>
+        <motion.div
+          className="w-full md:hidden"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img src={herobanner} alt="Hero Banner" className="" />
         </motion.div>
       </div>
     </div>

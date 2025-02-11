@@ -45,15 +45,13 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-5 md:p-0 md:py-[64px] mb-20 lg:w-[1000px] mx-auto">
-      <h2 className="header-text mt-10 font-bold mb-10 text-center">
-        Your Questions Answered
-      </h2>
-
+    <div className="p-5 lg:p-0 md:py-[64px] mb-20 lg:w-[1000px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div className="flex items-center mb-10 flex-col md:hidden">
           <img src={faq} alt="" className="w-64" />
-          <p className="text-[28px] text-pridark">Your Questions Answered</p>
+          <p className="text-center font-bold text-[28px] text-pridark">
+            Your Questions Answered
+          </p>
           <p className="text-[16px] text-center">
             Check out our Q & A section for quick answers to <br /> common
             questions about our caregiver services and <br /> how to get

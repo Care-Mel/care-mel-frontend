@@ -2,18 +2,15 @@
 
 function ServiceBanner() {
   return (
-    <div className="h-[90vh] container px-10  mx-auto flex justify-center items-center">
+    <div className="h-[100vh] container px-10  mx-auto flex justify-center items-center">
       <div className="text-center">
         <p className="header-text font-bold">
-          Find Skilled and Caring Professionals at Care Mel
+          Trusted Care for Every Stage of Life
         </p>
-        <p className="body-text sm:mt-5 md:mt-10 lg:mt-20">
-          At Care Mel, we make it simple to find kind and skilled caregivers for
-          your loved ones.
-          <br /> Our optimized process ensures you receive the right care
-          quickly,
-          <br /> providing you with reliable and compassionate support whenever
-          you need it
+        <p className="text-[20px] sourcesans font-semibold mt-10">
+          Whether you need daily support or occasional assistance, <br /> our
+          care services are designed to provide your family with <br />{" "}
+          dependable, nurturing care.
         </p>
       </div>
     </div>

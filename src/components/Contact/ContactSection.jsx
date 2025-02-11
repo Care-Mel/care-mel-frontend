@@ -1,50 +1,100 @@
 // import React from 'react';
+import contact1 from "./../../assets/image/contact/contact1.svg";
+import contact2 from "./../../assets/image/contact/contact2.svg";
+import contact3 from "./../../assets/image/contact/contact3.svg";
+import icon1 from "./../../assets/image/contact/phone_icon.svg";
+import icon2 from "./../../assets/image/contact/message_icon.svg";
+import icon3 from "./../../assets/image/contact/mail-icon.svg";
 
 const ContactSection = () => {
   return (
-    <div className="pt-[64px] lg:w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 px-5 sm:px-20 md:px-6">
-      {/* Hotline Contact Card */}
-      <div className="bg-primary text-center px-6 text-white rounded-lg py-10 md:py-30 flex md:h-[350px] flex-col justify-between shadow-md w-full md:w-1/2">
-        <div>
-          <h3 className="header-text font-bold">Hotline Contact</h3>
-          <p className="mt-2 body-text">
-            Our office hours are Monday to Friday,
-            <br />
-            <span
-              className="font-bold"
-              style={{
-                textShadow:
-                  "-1px -1px 0 #808080, 1px -1px 0 #808080, -1px 1px 0 #3DBB47, 1px 1px 0 #808080",
-              }}
-            >
-              9 AM to 6 PM{" "}
-            </span>
-            . We’re here to assist you with any questions or support you need.
-          </p>
+    <div className="pt-[64px] px-5 lg:px-0 lg:w-[1000px] mx-auto mt-[80px] sm:mt-[100px] md:mt-[120px] lg:mt-[150px] min-h-[100vh]">
+      <div className="">
+        {/* Talk to a Care Manager Section */}
+        <div className="bg-sub w-full rounded-3xl px-5 sm:px-20 md:px-8 py-8 flex flex-col md:flex-row gap-5 items-center">
+          <div className="md:w-1/3 md:hidden">
+            <img
+              src={contact1} // Replace with your actual image URL
+              alt="Care Manager Illustration"
+              className="max-w-full h-auto"
+            />
+          </div>
+          <div className="md:w-2/3">
+            <h2 className="md:text-[20px] lg:text-[28px] font-semibold text-pridark mb-4">
+              Talk to a Care Manager
+            </h2>
+            <p className="sourcesans lg:text-[20px] mb-4">
+              Our office hours are Monday to Friday, 9 AM to 5 PM. We're here to
+              assist you with any questions or support you need.
+            </p>
+            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+              <span className="me-5">Call a Care Advisor</span>
+              <img src={icon1} />
+            </button>
+          </div>
+          <div className="md:w-1/3 hidden md:block">
+            <img
+              src={contact1} // Replace with your actual image URL
+              alt="Care Manager Illustration"
+              className="max-w-full h-auto"
+            />
+          </div>
         </div>
-        <a
-          href="tel:09773703015"
-          className="mt-4 bg-white font-bold text-primary w-64 mx-auto rounded-lg text-center py-4 hover:bg-gray-200"
-        >
-          Call Our Hotline
-        </a>
-      </div>
 
-      {/* Social Contact Card */}
-      <div className="text-center bg-primary text-white rounded-lg px-6 py-10 md:py-30 md:h-[350px]  flex flex-col justify-between shadow-md w-full md:w-1/2">
-        <div>
-          <h3 className="header-text font-bold">Social Contact</h3>
-          <p className="mt-2 body-text">
-            Need help? Reach out via Messenger for quick support. We’re here for
-            you!
-          </p>
+        {/* Talk to a Care Manager Section */}
+        <div className="bg-sub w-full rounded-3xl px-5 sm:px-20 md:px-8 py-8 flex flex-col md:flex-row gap-5 items-center my-10">
+          <div className="md:w-1/2">
+            <img
+              src={contact2} // Replace with your actual image URL
+              alt="Care Manager Illustration"
+              className="max-w-full h-auto"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="md:text-[20px] lg:text-[28px] font-semibold text-pridark mb-4">
+              Discuss Your Needs
+            </h2>
+            <p className="sourcesans lg:text-[20px] mb-4">
+              Let’s start with a conversation. We’ll ask thoughtful questions,
+              listen closely, and craft a plan with ongoing adjustments to
+              ensure it always works for you.
+            </p>
+            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+              <span className="me-5">Leave a Message</span>
+              <img src={icon2} />
+            </button>
+          </div>
         </div>
-        <a
-          href="https://m.me/197568866770556?source=qr_link_share"
-          className="mt-4 mx-auto bg-white w-64 font-bold text-primary rounded-lg text-center py-4 hover:bg-gray-200"
-        >
-          Message Us on Messenger
-        </a>
+
+        {/* Talk to a Care Manager Section */}
+        <div className="bg-sub w-full rounded-3xl px-5 sm:px-20 md:px-8 py-8 md:py-10 flex flex-col md:flex-row gap-5 items-center">
+          <div className="md:w-1/2 md:hidden">
+            <img
+              src={contact3} // Replace with your actual image URL
+              alt="Care Manager Illustration"
+              className="max-w-full h-auto"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="md:text-[20px] lg:text-[28px] font-semibold text-pridark mb-4">
+              Together, We Can Make a Difference in Caregiving
+            </h2>
+            <p className="sourcesans lg:text-[20px] mb-4">
+              Your partnership helps us empower caregivers and transform lives
+            </p>
+            <button className="bg-white hover:bg-green-200 text-primary open-sans font-bold py-2 px-4 rounded-full inline-flex items-center">
+              <span className="me-5">Send a email</span>
+              <img src={icon3} />
+            </button>
+          </div>
+          <div className="md:w-1/2 hidden md:block">
+            <img
+              src={contact3} // Replace with your actual image URL
+              alt="Care Manager Illustration"
+              className="max-w-full h-auto"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

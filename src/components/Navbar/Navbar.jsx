@@ -14,10 +14,10 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="md:container bg-white mx-auto flex items-center justify-between py-6 px-5 md:px-8 lg:px-10 md:rounded-full">
+      <div className="md:container bg-white mx-auto flex items-center justify-between py-5 md:py-6 px-5 md:px-8 lg:px-10 md:rounded-full">
         {/* Logo */}
         <Link to="/" className="">
-          <img src={logo} alt="Logo" className="w-14" />
+          <img src={logo} alt="Logo" className="w-20 md:w-14" />
         </Link>
 
         {/* Desktop Nav Links */}

@@ -1,67 +1,68 @@
-import { motion } from "framer-motion";
-import { services } from "../Home/AboutUs";
-import { useState } from "react";
+import elder from "./../../assets/image/service/eldercare.jpg";
+import infant from "./../../assets/image/service/newborn.jpg";
+import hospital from "./../../assets/image/service/hospitalCare.jpg";
+import newborn from "./../../assets/image/service/childCare.jpg";
+import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
+
+export const services = [
+  {
+    icon: <FaBaby />,
+    image: newborn,
+    title: "Newborn Care",
+    description:
+      "“Our caregivers provide gentle and nurturing care for infants, ensuring safety and well-being”",
+  },
+  {
+    icon: <FaChild />,
+    image: infant,
+    title: "Child Care",
+    description:
+      "“Reliable and compassionate childcare services, providing parents peace of mind knowing their children are in safe hands.”",
+  },
+  {
+    icon: <FaHospitalAlt />,
+    image: hospital,
+    title: "Hospital Companion Care",
+    description:
+      "“We offer companionship and support for those in hospital settings, making recovery less lonely and more comfortable”",
+  },
+  {
+    icon: <FaUserFriends />,
+    image: elder,
+    title: "Elder Care",
+    description:
+      "“We offer warm, attentive support for seniors, assisting with daily tasks to maintain comfort and independence at home.”",
+  },
+];
 
 function Services() {
-  const [selectedService, setSelectedService] = useState("childCare");
-
-  const handleServiceChange = (service) => {
-    setSelectedService(service);
-  };
+  console.log(services);
   return (
-    <div className="pb-10 w-[1000px] mx-auto">
-      <div className="bg-slate-200 p-4 rounded-lg mb-4">
-        <ul className="flex justify-between w-full items-center">
-          {Object.keys(services).map((serviceKey) => (
-            <li
-              key={serviceKey}
-              className={`flex items-center cursor-pointer px-4 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out transform ${
-                selectedService === serviceKey
-                  ? "bg-green-600 text-white"
-                  : "hover:bg-green-600 hover:text-white"
-              }`}
-              onClick={() => handleServiceChange(serviceKey)}
-            >
-              {services[serviceKey].title}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className=" rounded-lg shadow-lg h-[300px] p-6 flex items-center overflow-hidden">
-        <div className="w-[764px] h-[280px] mr-4">
-          <motion.img
-            src={services[selectedService].image}
-            alt={services[selectedService].title}
-            key={selectedService}
-            className="w-full h-full rounded-lg object-cover"
-            initial={{ opacity: 0, y: 200 }} // Image enters with a slight slide up
-            animate={{ opacity: 1, y: 0 }} // Final state
-            exit={{ opacity: 0, y: -200 }} // Exit animation
-            transition={{ duration: 1 }} // Transition duration
-          />
-        </div>
-
-        <motion.div
-          key={selectedService}
-          className="flex-grow h-full flex flex-col justify-between"
-          initial={{ opacity: 0, y: 200 }} // Image enters with a slight slide up
-          animate={{ opacity: 1, y: 0 }} // Final state
-          exit={{ opacity: 0, y: -200 }} // Exit animation
-          transition={{ duration: 1 }} // Transition duration
-        >
-          <h3 className="font-bold text-3xl">
-            {services[selectedService].title}
-          </h3>
-          <p className="mb-4 font-medium text-2xl leading-relaxed">
-            {services[selectedService].description}
-          </p>
-          <a
-            href="#"
-            className="text-green-500 text-md w-64 bg-white font-bold border border-green-500 rounded-xl py-4 px-4 hover:bg-green-600 transition duration-300 hover:text-white"
+    <div className="pb-[64px] sm:w-[500px] lg:w-[1000px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 lg:gap-20 px-5 gap-20">
+        {services.map((card, index) => (
+          <div
+            key={index}
+            className="bg-sub rounded-3xl p-5 md:p-10 overflow-hidden shadow-md"
           >
-            Explore Our {services[selectedService].title}
-          </a>
-        </motion.div>
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-[300px] rounded-xl"
+            />
+            <div className="py-6 flex flex-col justify-between h-[250px]">
+              <h3 className="md:text-[22px] lg:text-[28px] font-semibold text-green-800">
+                {card.title}
+              </h3>
+              <p className="sourcesans text-[16px] lg:text-[20px]">
+                {card.description}
+              </p>
+              <button className="bg-white text-primary font-bold py-4 px-4 rounded-full inline-flex items-center">
+                <span>Get Personalized Care Plans</span>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

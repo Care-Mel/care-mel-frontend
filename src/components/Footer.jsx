@@ -1,6 +1,14 @@
 // import React from 'react';
 import { SocialIcon } from "react-social-icons";
 import logo from "./../assets/image/logo.svg";
+import icon1 from "./../assets/image/home/footer1.svg";
+import icon2 from "./../assets/image/home/footer2.svg";
+import icon3 from "./../assets/image/home/footer3.svg";
+import icon4 from "./../assets/image/home/footer4.svg";
+import icon5 from "./../assets/image/contact/phone_icon.svg";
+// import icon2 from "./../../assets/image/contact/message_icon.svg";
+import icon6 from "./../assets/image/contact/mail-icon.svg";
+
 import { Link } from "react-router-dom";
 
 const Footer = ({ classData }) => {
@@ -42,8 +50,9 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-green-300"
+                  className="hover:text-primary text-[18px] flex gap-2 items-center"
                 >
+                  <img src={icon1} />
                   Child Care Service
                 </Link>
               </li>
@@ -53,8 +62,9 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-green-300"
+                  className="hover:text-primary text-[18px] flex gap-2 items-center"
                 >
+                  <img src={icon4} />
                   Newborn Care Service
                 </Link>
               </li>
@@ -64,8 +74,9 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-green-300"
+                  className="hover:text-primary text-[18px] flex gap-2 items-center"
                 >
+                  <img src={icon3} />
                   Hospital Companion Care Service
                 </Link>
               </li>
@@ -75,8 +86,9 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-green-300"
+                  className="hover:text-primary text-[18px] flex gap-2 items-center"
                 >
+                  <img src={icon2} />
                   Elder Care Service
                 </Link>
               </li>
@@ -88,14 +100,17 @@ const Footer = ({ classData }) => {
               Contact With Us
             </h2>
             <p className="mt-5 text-lg font-semibold">
-              09 - 773 709 015 <br />
+              <p className="flex items-center gap-2">
+                <img src={icon5} /> <span>09 - 773 709 015</span>
+              </p>
               <span className="text-sm font-medium">(Office Hours 9 to 6)</span>
             </p>
             <p className="mt-5 font-semibold">
               <a
                 href="mailto:carenekontact@mail.com"
-                className="hover:text-green-300"
+                className="hover:text-green-300 flex items-center gap-2"
               >
+                <img src={icon6} />
                 info@caremelmm.com
               </a>
             </p>
