@@ -50,7 +50,7 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-primary text-[18px] flex gap-2 items-center"
+                  className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
                   <img src={icon1} />
                   Child Care Service
@@ -62,7 +62,7 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-primary text-[18px] flex gap-2 items-center"
+                  className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
                   <img src={icon4} />
                   Newborn Care Service
@@ -74,7 +74,7 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-primary text-[18px] flex gap-2 items-center"
+                  className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
                   <img src={icon3} />
                   Hospital Companion Care Service
@@ -86,7 +86,7 @@ const Footer = ({ classData }) => {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  className="hover:text-primary text-[18px] flex gap-2 items-center"
+                  className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
                   <img src={icon2} />
                   Elder Care Service
@@ -95,25 +95,29 @@ const Footer = ({ classData }) => {
             </ul>
           </div>
 
-          <div className="flex flex-col w-full md:w-1/2 mt-10 md:mt-0">
-            <h2 className="text-xl text-primary font-semibold">
-              Contact With Us
-            </h2>
-            <p className="mt-5 text-lg font-semibold">
-              <p className="flex items-center gap-2">
-                <img src={icon5} /> <span>09 - 773 709 015</span>
+          <div className="flex flex-col w-full md:w-1/2 items-start md:items-center mt-10 md:mt-0">
+            <div>
+              <h2 className="text-xl text-primary font-semibold">
+                Contact With Us
+              </h2>
+              <p className="mt-5 text-lg font-semibold">
+                <p className="flex items-center gap-2">
+                  <img src={icon5} /> <span>09 - 773 709 015</span>
+                </p>
+                <span className="text-sm font-medium ms-8 ">
+                  (Office Hours 9 to 6)
+                </span>
               </p>
-              <span className="text-sm font-medium">(Office Hours 9 to 6)</span>
-            </p>
-            <p className="mt-5 font-semibold">
-              <a
-                href="mailto:carenekontact@mail.com"
-                className="hover:text-green-300 flex items-center gap-2"
-              >
-                <img src={icon6} />
-                info@caremelmm.com
-              </a>
-            </p>
+              <p className="mt-5 font-semibold">
+                <a
+                  href="mailto:carenekontact@mail.com"
+                  className="hover:text-green-300 flex items-center gap-2"
+                >
+                  <img src={icon6} />
+                  info@caremelmm.com
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
