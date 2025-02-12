@@ -67,10 +67,10 @@ const AboutUs = ({ classData }) => {
               </div>
             </div>
             <div className="mt-4">
-              <h3 className="text-[14px] font-semibold">{data.title}</h3>
+              <h3 className="text-[14px] font-semibold mb-5">{data.title}</h3>
             </div>
-            <button className="bg-white open-sans text-primary text-sm font-bold px-4 py-2 rounded-full mt-4">
-              <p>Get Personalized Care Plans</p>
+            <button className="bg-white open-sans truncate w-[200px] overflow-hidden text-primary text-sm font-bold px-4 py-2 rounded-full mt-4 hover:bg-primary hover:text-white transition-colors duration-300">
+              <p className="">Explore {data.title}</p>
             </button>
           </div>
         ))}

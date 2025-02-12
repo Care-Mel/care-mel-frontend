@@ -35,7 +35,7 @@ const Collaborate = () => {
               Successful Served Duties
             </h3>
             <p className="sm:text-[32px] md:text-[18px] lg:text-[32px] mt-2 font-bold">
-              <Number n={150} />+ Duties
+              <Number n={200} />+ Duties
             </p>
           </div>
           <div className="mb-4 md:mb-0 text-white py-5 md:px-10 md:p-0 rounded-3xl">

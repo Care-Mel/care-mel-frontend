@@ -105,7 +105,7 @@ const Footer = ({ classData }) => {
                   <img src={icon5} /> <span>09 - 773 709 015</span>
                 </p>
                 <span className="text-sm font-medium ms-8 ">
-                  (Office Hours 9 to 6)
+                  (Office Hours 9 to 5)
                 </span>
               </p>
               <p className="mt-5 font-semibold">

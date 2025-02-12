@@ -59,8 +59,8 @@ function Services() {
                   {card.description}
                 </p>
               </div>
-              <button className="bg-white text-primary font-bold py-4 px-4 rounded-full inline-flex items-center">
-                <span>Get Personalized Care Plans</span>
+              <button className="bg-white text-primary font-bold py-4 px-4 rounded-full inline-flex justify-center items-center">
+                <span>Explore {card.title}</span>
               </button>
             </div>
           </div>

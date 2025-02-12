@@ -38,9 +38,9 @@ const HeroBanner = () => {
             <a
               href="https://m.me/197568866770556?source=qr_link_share"
               target="_blank"
-              className="inline-flex items-center mt-10 bg-primary md:text-[14px] text-[16px] font-semibold text-white py-5 px-10 rounded-full hover:bg-green-600 transition duration-200"
+              className="inline-flex items-center mt-10 bg-primary text-[16px]  font-semibold text-white py-5 px-10 rounded-full hover:bg-green-600 transition duration-200"
             >
-              <span className="open-sans"> Get Your Personalized Plan</span>
+              <span className="open-sans"> Book Your Caregiving Service</span>
               <MdSupportAgent className="inline-block ml-2" />
             </a>
           </div>

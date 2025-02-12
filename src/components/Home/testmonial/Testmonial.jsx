@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { motion } from "framer-motion"; // Import motion
 import testing from "./../../../assets/image/home/testing.svg";
 
 const testimonials = [
@@ -34,7 +34,7 @@ const Testmonial = () => {
     );
   };
 
-  const { quote, description, name, service } = testimonials[currentIndex];
+  const { quote, description, service } = testimonials[currentIndex];
 
   return (
     <div className="mx-auto px-5 md:px-10 lg:px-0 pb-[64px] lg:w-[1000px] ">
@@ -53,16 +53,22 @@ const Testmonial = () => {
             >
               <IoIosArrowBack className="" size={20} />
             </button>
-            <div className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white h-[300px] md:h-auto ">
+            <motion.div
+              className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white h-[300px] md:h-auto"
+              key={currentIndex} // Use key to trigger animation on index change
+              initial={{ opacity: 0, x: -50 }} // Initial state
+              animate={{ opacity: 1, x: 0 }} // Animate to this state
+              exit={{ opacity: 0, x: 50 }} // Exit state
+              transition={{ duration: 0.5 }} // Transition duration
+            >
               <div className="text-[20px] text-pridark font-bold mb-4">
-                <p className="">{quote}</p>
+                <p>{quote}</p>
               </div>
               <p className="text-[16px]">{description}</p>
               <div className="md:flex justify-between pt-5">
-                {/* <p className="font-bold text-primary">{name}</p> */}
                 <p className="text-primary fon-bold">{service}</p>
               </div>
-            </div>
+            </motion.div>
             <button
               onClick={previousTestimonial}
               className="md:hidden mx-2 px-4 py-4 bg-sub text-pridark rounded-full md:hover:bg-green-700 md:hover:text-white active:scale-90"
@@ -80,7 +86,8 @@ const Testmonial = () => {
             {testimonials.map((_, index) => (
               <div
                 key={index}
-                className={`w-8 h-2 mx-1 ${
+                onClick={() => setCurrentIndex(index)}
+                className={`w-8 h-2 mx-1 cursor-pointer ${
                   index === currentIndex ? "bg-pridark" : "bg-gray-300"
                 }`}
               ></div>

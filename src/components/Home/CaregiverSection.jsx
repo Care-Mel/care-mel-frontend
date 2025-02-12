@@ -27,7 +27,7 @@ const CaregiverSection = () => {
               href="https://m.me/197568866770556?source=qr_link_share"
               className="flex sm:inline-flex gap-4 mt-4 px-6 py-4 hover:scale-95 font-bold border border-white rounded-full bg-white text-primary transition duration-300"
             >
-              <p>Get Personalized Care Plans</p>
+              <p>Find Your Caregiver</p>
               <img src={icon} />
             </a>
           </div>
