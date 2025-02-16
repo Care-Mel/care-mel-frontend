@@ -44,7 +44,7 @@ export const services = {
 
 const AboutUs = ({ classData }) => {
   return (
-    <div className="container px-5 mx-auto lg:px-0 pt-[64px] lg:w-[1000px]">
+    <div className="container px-5 mx-auto lg:px-0 pt-[32px] md:pt-[64px] lg:pt-[128px] lg:w-[1000px]">
       <div className={`${classData} mx-auto`}>
         <p className="header-text font-bold md:text-center">
           Trusted Care for Every Stage of Life

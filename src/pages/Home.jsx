@@ -14,8 +14,9 @@ function Home() {
     <div className=" mx-auto">
       <HeroBanner />
       <AboutUs />
-      <Mission />
       <Collaborate />
+      <Mission />
+
       {/* <Steps /> */}
       <Testmonial />
       <CaregiverSection />

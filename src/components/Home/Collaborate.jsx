@@ -18,7 +18,7 @@ function Number({ n }) {
 
 const Collaborate = () => {
   return (
-    <div className="mx-auto px-5 py-4 lg:px-0 lg:w-[1000px] sm:py-6 md:py-8 mt-1 sm:mt-2 md:mt-5">
+    <div className="mx-auto px-5 py-4 lg:px-0 lg:px-0 pt-[28px] md:pt-[32px] lg:pt-[64px] lg:w-[1000px] sm:py-6 md:py-8 mt-1 sm:mt-2 md:mt-5">
       <div className="mb-10 flex flex-col md:flex-row items-center justify-center bg-primary text-white rounded-lg md:shadow-lg md:py-10">
         <div className="md:flex">
           <div className="mb-4 md:mb-0 text-white py-5 md:px-10 md:p-0 rounded-3xl">

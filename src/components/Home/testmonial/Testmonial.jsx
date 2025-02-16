@@ -37,7 +37,7 @@ const Testmonial = () => {
   const { quote, description, service } = testimonials[currentIndex];
 
   return (
-    <div className="mx-auto px-5 md:px-10 lg:px-0 pb-[64px] lg:w-[1000px] ">
+    <div className="mx-auto px-5 lg:px-0 pb-[32px] md:pb-[64px] lg:pb-[128px] lg:w-[1000px] ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
           <img src={testing} alt="Testing" className="w-full" />

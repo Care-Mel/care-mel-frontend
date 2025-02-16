@@ -45,7 +45,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-5 md:pt-[64px] lg:w-[1000px] mx-auto">
+    <div className="p-5 lg:px-0 py-[32px] md:py-[64px] lg:py-[128px] lg:w-[1000px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div className="flex items-center mb-10 flex-col md:hidden">
           <img src={faq} alt="" className="w-64" />

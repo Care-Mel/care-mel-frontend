@@ -77,7 +77,7 @@ const GoalsAndAspirations = () => {
           </div>
         </div>
       </div>
-      <div className="md:py-20 border-slate-300 flex flex-col items-center md:items-start rounded-lg py-5 md:py-0">
+      <div className="lg:px-0 py-[32px] md:py-[64px] lg:py-[128px] border-slate-300 flex flex-col items-center md:items-start rounded-lg py-5 md:py-0">
         <h2 className="text-center mx-auto header-text font-bold sm:mb-0 md:mb-4">
           Our Partner Organizations
         </h2>

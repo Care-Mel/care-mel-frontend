@@ -11,9 +11,11 @@ import icon6 from "./../assets/image/contact/mail-icon.svg";
 
 import { Link } from "react-router-dom";
 
-const Footer = ({ classData }) => {
+const Footer = () => {
   return (
-    <footer className={`bg-white text-dark pt-20 pb-8 px-5 md:px-10 lg:px-0 `}>
+    <footer
+      className={`bg-white text-dark lg:px-0 pt-[32px] md:pt-[64px] lg:pt-[128px] pb-8 px-5 md:px-10 lg:px-0 `}
+    >
       <div className="mx-auto flex flex-col lg:flex-row lg:w-[1000px]">
         <div className="flex flex-col w-full lg:w-2/5">
           <img src={logo} alt="Logo" className="w-28" />
@@ -119,6 +121,13 @@ const Footer = ({ classData }) => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="flex flex-col md:flex-row justify-center items-center mt-[100px]">
+          <p className="text-sm text-gray-600">
+            © 2024 Care Mel. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

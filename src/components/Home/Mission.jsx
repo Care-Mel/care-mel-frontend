@@ -4,7 +4,7 @@ import missionImage from "./../../assets/image/home/mission.svg"; // Update with
 // import Collaborate from "./Collaborate";
 const Mission = () => {
   return (
-    <div className="mt-20 p-5 lg:px-0 lg:w-[1000px] mx-auto md:text-center">
+    <div className="p-5 lg:px-0 pt-[32px] md:pt-[64px] lg:pt-[128px] lg:w-[1000px] mx-auto md:text-center">
       <h2 className="header-text font-bold">
         Our Mission: Caring for Every Family
       </h2>
@@ -30,7 +30,7 @@ const Mission = () => {
           </p>
           <Link
             to="/about"
-            className="md:w-[400px] text-[20px] md:text-[15px] text-center lg:text-[20px] open-sans mt-5 border border-primary bg-primary text-white hover:bg-green-600 font-bold rounded-full py-4 px-4 transition duration-300"
+            className="mds:w-[400px] text-[20px] md:text-[15px] text-center lg:text-[20px] open-sans mt-5 border bg-primary text-white hover:bg-white hover:text-primary font-bold rounded-full py-4 px-4 transition duration-1000"
           >
             Learn About Us
           </Link>
