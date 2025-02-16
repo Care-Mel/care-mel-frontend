@@ -30,7 +30,7 @@ const Mission = () => {
           </p>
           <Link
             to="/about"
-            className="text-[20px] md:text-[15px] text-center lg:text-[20px] open-sans mt-5 border border-primary bg-primary text-white hover:bg-white hover:text-primary font-bold rounded-full py-4 md:py-2 px-4 transition duration-300"
+            className="md:w-[400px] text-[20px] md:text-[15px] text-center lg:text-[20px] open-sans mt-5 border border-primary bg-primary text-white hover:bg-green-600 font-bold rounded-full py-4 px-4 transition duration-300"
           >
             Learn About Us
           </Link>

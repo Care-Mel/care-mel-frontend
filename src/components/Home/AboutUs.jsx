@@ -44,7 +44,7 @@ export const services = {
 
 const AboutUs = ({ classData }) => {
   return (
-    <div className="container px-5 mx-auto lg:px-0 py-[64px] lg:w-[1000px]">
+    <div className="container px-5 mx-auto lg:px-0 pt-[64px] lg:w-[1000px]">
       <div className={`${classData} mx-auto`}>
         <p className="header-text font-bold md:text-center">
           Trusted Care for Every Stage of Life
@@ -62,15 +62,15 @@ const AboutUs = ({ classData }) => {
             className="flex flex-col justify-between items-center bg-sub rounded-lg shadow-lg px-4 py-10 hover:shadow-xl transition-shadow duration-300"
           >
             <div className="flex items-center justify-center">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-pridark text-white">
+              <div className="w-16 h-16 flex items-center justify-center rounded-3xl bg-pridark text-white">
                 <img src={data.icon} />
               </div>
             </div>
             <div className="mt-4">
               <h3 className="text-[14px] font-semibold mb-5">{data.title}</h3>
             </div>
-            <button className="bg-white open-sans truncate w-[200px] overflow-hidden text-primary text-sm font-bold px-4 py-2 rounded-full mt-4 hover:bg-primary hover:text-white transition-colors duration-300">
-              <p className="">Explore {data.title}</p>
+            <button className="bg-white open-sans truncate w-[200px] overflow-hidden text-primary text-sm font-bold px-4 py-4 rounded-full mt-4 hover:bg-primary hover:text-white transition-colors duration-300">
+              <p className="">Personalize Care Plan</p>
             </button>
           </div>
         ))}

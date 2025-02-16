@@ -46,13 +46,13 @@ const Footer = ({ classData }) => {
             <ul className="mt-2 space-y-5 mt-5">
               <li className="">
                 <Link
-                  to="/service"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
+                  to="/service#services"
+                  // onClick={() => {
+                  //   window.scrollTo(0, 0);
+                  // }}
                   className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
-                  <img src={icon1} />
+                  <img src={icon1} className="w-6 h-6" />
                   Child Care Service
                 </Link>
               </li>
@@ -64,7 +64,7 @@ const Footer = ({ classData }) => {
                   }}
                   className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
-                  <img src={icon4} />
+                  <img src={icon4} className="w-6 h-6" />
                   Newborn Care Service
                 </Link>
               </li>
@@ -76,7 +76,7 @@ const Footer = ({ classData }) => {
                   }}
                   className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
-                  <img src={icon3} />
+                  <img src={icon3} className="w-6 h-6" />
                   Hospital Companion Care Service
                 </Link>
               </li>
@@ -88,7 +88,7 @@ const Footer = ({ classData }) => {
                   }}
                   className="hover:text-primary md:text-[16px] lg:text-[18px] flex gap-2 items-center"
                 >
-                  <img src={icon2} />
+                  <img src={icon2} className="w-6 h-6" />
                   Elder Care Service
                 </Link>
               </li>

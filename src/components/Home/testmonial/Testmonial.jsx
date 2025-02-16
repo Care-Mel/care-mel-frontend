@@ -38,10 +38,10 @@ const Testmonial = () => {
 
   return (
     <div className="mx-auto px-5 md:px-10 lg:px-0 pb-[64px] lg:w-[1000px] ">
-      <div className="flex flex-col lg:flex-row justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
           <img src={testing} alt="Testing" className="w-full" />
-          <p className="text-pridark font-bold text-[28px]">
+          <p className="text-pridark font-bold text-[28px] md:text-[24px] lg:text-[28px] text-center">
             Stories from Families Like Yours
           </p>
         </div>
@@ -54,7 +54,7 @@ const Testmonial = () => {
               <IoIosArrowBack className="" size={20} />
             </button>
             <motion.div
-              className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white h-[300px] md:h-auto"
+              className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white md:h-[300px]"
               key={currentIndex} // Use key to trigger animation on index change
               initial={{ opacity: 0, x: -50 }} // Initial state
               animate={{ opacity: 1, x: 0 }} // Animate to this state
@@ -87,7 +87,7 @@ const Testmonial = () => {
               <div
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-8 h-2 mx-1 cursor-pointer ${
+                className={`w-8 h-2 mx-1 cursor-pointer rounded-md ${
                   index === currentIndex ? "bg-pridark" : "bg-gray-300"
                 }`}
               ></div>

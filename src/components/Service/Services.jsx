@@ -36,12 +36,13 @@ export const services = [
 ];
 
 function Services() {
-  console.log(services);
+  // console.log(services);
   return (
     <div className="pb-[64px] sm:w-[500px] lg:w-[1000px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 lg:gap-20 px-5 gap-20">
         {services.map((card, index) => (
           <div
+            id="services"
             key={index}
             className="bg-sub rounded-3xl p-5 md:p-10 overflow-hidden shadow-md"
           >

@@ -22,27 +22,24 @@ const GoalsAndAspirations = () => {
       <div className="mb-20 md:mb-10">
         <div className="mb-10">
           <div className="md:flex items-center w-full mb-2">
-            <div className="w-full md:w-1/2 ">
+            <div className="w-full md:w-1/2 flex items-center justify-center">
               <img
                 src={goal}
                 alt="Mission"
-                className="rounded-lg w-full md:w-[380px] h-[280px] object-cover shadow-lg mr-4"
+                className="rounded-lg object-cover shadow-lg"
               />
             </div>
             <div className="w-full md:w-1/2">
-              <div className="mt-5 md:mt-0 md:ms-10 ">
-                <p className="text-[28px] mb-5 font-bold text-pridark ">
+              <div className="mt-5 md:mt-0 ms-5 lg:ms-0">
+                <p className="sm:text-[28px] md:text-[20px] lg:text-[24px] mb-5 md:mb-2 lg:mb-5 font-bold text-pridark ">
                   Your Family’s Trust, Our Guiding Promise
                 </p>
-                <p className="body-text md:text-[14px] sourcesans">
+                <p className="text-[20px] md:text-[18px] sourcesans">
                   Our mission is to provide compassionate, high-quality
                   caregiver services that empower families and enhance the
                   well-being of their loved ones. We are committed to fostering
                   trust and delivering personalized care that meets individual
-                  needs.We’re dedicated to empowering families through
-                  compassionate, personalized care—combining expertise with
-                  empathy to nurture well-being, build trust, and honor the
-                  unique needs of every individual we serve.
+                  needs.
                 </p>
               </div>
             </div>
@@ -55,7 +52,7 @@ const GoalsAndAspirations = () => {
               <p className="text-[28px] mb-5 font-bold text-pridark ">
                 Collaborate for Meaningful Change
               </p>
-              <p className="text-[14px] sourcesans me-10">
+              <p className="text-[18px] sourcesans">
                 To redefine caregiving by leading with relentless excellence and
                 meaningful innovation—building a world where families thrive
                 with dignity, caregivers are celebrated for their impact, and

@@ -1,13 +1,22 @@
 import { motion } from "framer-motion";
 import herobanner from "./../../assets/image/home/caremle.svg";
 import { MdSupportAgent } from "react-icons/md";
+import bg from "./../../assets/image/contact/bg.jpg";
 
 // import { GradualSpacing } from "../animaition/GradualSpacing";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-background pt-10 px-5 mx-auto min-h-[100vh] flex justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center container mt-20 md:mt-10 mx-auto">
+    <div
+      className="pt-10 px-5 mx-auto min-h-[100vh] flex justify-center items-end"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="flex flex-col md:flex-row justify-center items-end mt-20 md:mt-10 mx-auto">
         <motion.div
           className="w-1/2 hidden md:block"
           initial={{ opacity: 0, y: 20 }}
@@ -22,8 +31,8 @@ const HeroBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="ml-0 md:ml-5 lg:mb-5">
-            <h2 className="text-[24px] lg:text-[38px] text-pridark font-bold">
+          <div className="ml-0 md:ml-5 lg:mb-[15vh]">
+            <h2 className="text-[24px] lg:text-[38px] open-sans text-pridark font-bold ">
               Need Daycare Support? <br /> Let’s Find the Perfect Fit!
             </h2>
             <motion.p
@@ -41,7 +50,7 @@ const HeroBanner = () => {
               className="inline-flex items-center mt-10 bg-primary text-[16px]  font-semibold text-white py-5 px-10 rounded-full hover:bg-green-600 transition duration-200"
             >
               <span className="open-sans"> Book Your Caregiving Service</span>
-              <MdSupportAgent className="inline-block ml-2" />
+              <MdSupportAgent className="inline-block ml-2" size={24} />
             </a>
           </div>
         </motion.div>

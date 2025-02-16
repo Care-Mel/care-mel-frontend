@@ -6,9 +6,7 @@ function ServicePage() {
   return (
     <div>
       <ServiceBanner />
-      <div className="">
-        <Services />
-      </div>
+      <Services id="services" />
       <Testmonial />
       {/* <Footer classData={"bg-footer"} /> */}
     </div>
