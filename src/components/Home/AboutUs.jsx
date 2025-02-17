@@ -6,7 +6,7 @@ import infant from "./../../assets/image/service/newborn.jpg";
 import hospital from "./../../assets/image/service/hospitalCare.jpg";
 import newborn from "./../../assets/image/service/childCare.jpg";
 import icon1 from "./../../assets/image/service/newborn_care_icon.svg";
-import icon2 from "./../../assets/image/service/child_care_icon.svg";
+import icon2 from "./../../assets/image/service/family_star.svg";
 import icon3 from "./../../assets/image/service/hospital_care_icon.svg";
 import icon4 from "./../../assets/image/service/elder_care_icon.svg";
 // import { FaBaby, FaChild, FaHospitalAlt, FaUserFriends } from "react-icons/fa";
@@ -44,7 +44,10 @@ export const services = {
 
 const AboutUs = ({ classData }) => {
   return (
-    <div className="container px-5 mx-auto lg:px-0 pt-[32px] md:pt-[64px] lg:pt-[128px] lg:w-[1000px]">
+    <div
+      className="container px-5 mx-auto 
+     lg:w-[1000px]"
+    >
       <div className={`${classData} mx-auto`}>
         <p className="header-text font-bold md:text-center">
           Trusted Care for Every Stage of Life

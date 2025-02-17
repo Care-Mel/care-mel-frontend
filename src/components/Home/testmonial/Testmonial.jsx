@@ -57,7 +57,7 @@ const Testmonial = () => {
               <IoIosArrowBack className="" size={20} />
             </button>
             <motion.div
-              className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white md:h-[300px]"
+              className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white md:h-[250px]"
               key={currentIndex} // Use key to trigger animation on index change
               initial={{ opacity: 0, x: reverse ? 50 : -50 }} // Initial state based on reverse
               animate={{ opacity: 1, x: 0 }} // Animate to this state
