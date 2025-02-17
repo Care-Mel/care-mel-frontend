@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* <span className="text-gray-800">MYA / EN</span> */}
           <a
             href="https://m.me/197568866770556?source=qr_link_share"
-            className="open-sans inline-flex items-center bg-primary font-bold text-[20px] font-bold text-white py-3 px-8 lg:py-6 lg:px-10 rounded-full hover:scale-105 hover:shadow-lg shadow-primary transition duration-300 ease-in-out"
+            className="open-sans inline-flex items-center bg-primary font-bold lg:text-[20px] font-bold text-white py-3 px-6 lg:py-6 lg:px-10 rounded-full hover:scale-105 hover:shadow-lg shadow-primary transition duration-300 ease-in-out"
           >
             We’re Here to Help
             <FaFacebookMessenger className="inline-block ml-2" />
@@ -91,8 +91,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-blue-500">
-          <div className="flex flex-col space-y-4 px-4 py-10 absolute w-full z-10 bg-slate-200">
+        <div className="md:hidden bg-white">
+          <div className="flex flex-col space-y-4 px-4 py-10 absolute w-full z-10 bg-white">
             <NavLink
               to="/"
               onClick={toggleMenu}
