@@ -23,21 +23,24 @@ const testimonials = [
 
 const Testmonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [reverse, setReverse] = useState(false);
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setReverse(true);
   };
 
   const previousTestimonial = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
     );
+    setReverse(false);
   };
 
   const { quote, description, service } = testimonials[currentIndex];
 
   return (
-    <div className="mx-auto px-5 lg:px-0 pb-[32px] md:pb-[64px] lg:pb-[128px] lg:w-[1000px] ">
+    <div className="mx-auto px-5 lg:px-0 py-[32px] md:py-[64px] lg:py-[128px] lg:w-[1000px] ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/3">
           <img src={testing} alt="Testing" className="w-full" />
@@ -56,10 +59,10 @@ const Testmonial = () => {
             <motion.div
               className="mb-5 md:mb-0 p-5 lg:px-10 md:bg-white md:h-[300px]"
               key={currentIndex} // Use key to trigger animation on index change
-              initial={{ opacity: 0, x: -50 }} // Initial state
+              initial={{ opacity: 0, x: reverse ? 50 : -50 }} // Initial state based on reverse
               animate={{ opacity: 1, x: 0 }} // Animate to this state
-              exit={{ opacity: 0, x: 50 }} // Exit state
-              transition={{ duration: 0.5 }} // Transition duration
+              exit={{ opacity: 0, x: reverse ? -50 : 50 }} // Exit state based on reverse
+              transition={{ duration: 1, transition: "ease" }} // Transition duration
             >
               <div className="text-[20px] text-pridark font-bold mb-4">
                 <p>{quote}</p>

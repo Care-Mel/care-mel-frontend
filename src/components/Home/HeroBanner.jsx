@@ -31,7 +31,7 @@ const HeroBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="ml-0 md:ml-5 lg:mb-[15vh]">
+          <div className="ml-0 md:ml-5 md:mb-[15vh]">
             <h2 className="text-[24px] lg:text-[38px] open-sans text-pridark font-bold ">
               Need Daycare Support? <br /> Let’s Find the Perfect Fit!
             </h2>
@@ -47,10 +47,13 @@ const HeroBanner = () => {
             <a
               href="https://m.me/197568866770556?source=qr_link_share"
               target="_blank"
-              className="inline-flex items-center mt-10 bg-primary text-[16px]  font-semibold text-white py-5 px-10 rounded-full hover:bg-green-600 transition duration-200"
+              className="inline-flex items-center mt-10 bg-primary text-[20px] md:text-[16px] lg:text-[20px] font-bold text-white py-6 px-10 rounded-full hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out "
             >
               <span className="open-sans"> Book Your Caregiving Service</span>
-              <MdSupportAgent className="inline-block ml-2" size={24} />
+              <MdSupportAgent
+                className="inline-block lg:ml-4 md:ml-2 lg:ml-4"
+                size={24}
+              />
             </a>
           </div>
         </motion.div>

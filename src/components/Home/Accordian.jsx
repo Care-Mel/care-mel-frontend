@@ -13,7 +13,7 @@ const Accordion = () => {
         "Our services include Newborn Care, Child Care, Maternal Care, Elder Care, Hospital Companion Care and specialized care for conditions like dementia or post-surgical recovery.",
     },
     {
-      question: "Can I meet the caregiver before services begin",
+      question: "Can I meet the caregiver before services begin?",
       answer:
         "Yes, we arrange meet-and-greet sessions via zoom (or) in-person to ensure compatibility between the caregiver and the care recipient.",
     },
@@ -23,7 +23,7 @@ const Accordion = () => {
         "You’ll need basic details about the care recipient (age, health condition, required services) and your preferred schedule.",
     },
     {
-      question: "How long does it take to start services after booking",
+      question: "How long does it take to start services after booking?",
       answer:
         "In most cases, services can begin within 24-48 hours. For complex care needs, it may take a little longer to ensure we find the best match.(holidays and weekends may affect availability).",
     },
@@ -65,7 +65,7 @@ const Accordion = () => {
               key={index}
               className={`${
                 openIndex === index ? "bg-white" : ""
-              } shadow-md bg-white rounded-lg mb-10 min-h-[100px] flex flex-col items-center justify-center`}
+              } shadow-md bg-white rounded-xl mb-10 py-4 flex flex-col items-center justify-center`}
             >
               <div
                 className="flex justify-between w-full items-center py-4 px-10 cursor-pointer"
@@ -81,7 +81,7 @@ const Accordion = () => {
                 </button>
               </div>
               <div
-                className={`overflow-hidden transition-all duration-500 mt-3 ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   openIndex === index ? "max-h-screen" : "max-h-0"
                 }`}
                 style={{

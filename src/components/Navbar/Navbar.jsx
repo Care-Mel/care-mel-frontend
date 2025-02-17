@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="md:mx-10 bg-white mx-auto flex items-center justify-between py-5 md:py-6 px-5 md:px-8 lg:px-10 md:rounded-full">
+      <div className="md:mx-10 bg-white mx-auto flex items-center justify-between py-5 md:py-4 px-5 md:px-8 lg:px-10 md:rounded-full">
         {/* Logo */}
         <Link to="/" className="">
           <img src={logo} alt="Logo" className="w-20 md:w-14" />
@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* <span className="text-gray-800">MYA / EN</span> */}
           <a
             href="https://m.me/197568866770556?source=qr_link_share"
-            className="open-sans inline-flex items-center bg-primary lg:text-[20px] font-bold text-white py-3 px-8 rounded-full hover:bg-green-500"
+            className="open-sans inline-flex items-center bg-primary font-bold text-[20px] font-bold text-white py-3 px-8 lg:py-6 lg:px-10 rounded-full hover:scale-105 hover:shadow-lg shadow-primary transition duration-300 ease-in-out"
           >
             We’re Here to Help
             <FaFacebookMessenger className="inline-block ml-2" />

@@ -38,7 +38,7 @@ export const services = [
 function Services() {
   // console.log(services);
   return (
-    <div className="lg:px-0 pb-[32px] md:pb-[64px] lg:pb-[128px] sm:w-[500px] lg:w-[1000px] mx-auto">
+    <div className="lg:px-0 sm:w-[500px] lg:w-[1000px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 lg:gap-20 px-5 gap-20">
         {services.map((card, index) => (
           <div
@@ -60,7 +60,7 @@ function Services() {
                   {card.description}
                 </p>
               </div>
-              <button className="bg-white text-primary font-bold py-4 px-4 rounded-full inline-flex justify-center items-center">
+              <button className=" flex w-full sm:w-[350px] mx-auto bg-white text-primary font-bold py-6 px-10 rounded-full justify-center items-center hover:scale-105 hover:shadow-lg transition duration-300">
                 <span>Explore {card.title}</span>
               </button>
             </div>
