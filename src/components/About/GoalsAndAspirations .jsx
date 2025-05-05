@@ -3,7 +3,7 @@ import logo1 from "./../../assets/image/crossborder.png";
 import logo2 from "./../../assets/image/home/client.svg";
 import logo3 from "./../../assets/image/otas.png";
 import logo4 from "./../../assets/image/home/Platocare.png";
-import goal from "./../../assets/image/about/goal.png";
+import goal from "./../../assets/image/about/Family-cuate.svg";
 import vision from "./../../assets/image/about/about.svg";
 
 const partners = [
@@ -26,7 +26,7 @@ const GoalsAndAspirations = () => {
               <img
                 src={goal}
                 alt="Mission"
-                className="rounded-lg object-cover shadow-lg"
+                className="rounded-lg object-cover"
               />
             </div>
             <div className="w-full md:w-1/2">
